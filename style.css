@@ -29,6 +29,28 @@
 	float: right; /* position it to the right */
 }
 
+/* make all h3 headlines skinnier */
+h3 {
+	font-weight:200;
+}
+
+/* front page carousel text */
+#views-bootstrap-carousel-1 .carousel-caption {
+        background-color: rgba(0,0,0,0.5); /* create dark overlay */
+        font-size: 5em;
+	right: 75.6%;
+	left: 0px;
+	top: 0px;
+	padding:6px;
+	height: 300px;
+}
+
+/* front page SOCIAM description */
+.front-text h3 {
+	font-size: 1.3em;
+	font-weight: 220;
+	line-height: 120%;
+}
 
 /*
 #block-views-front-image-block h3 {
@@ -44,20 +66,10 @@
    	 padding-right:0px;
 }
 
-/*create dark overlay for the text on the front page carousel*/
-#views-bootstrap-carousel-1 .carousel-caption {
-        background-color: rgba(0,0,0,0.5);
-        font-size: 5em;
-	right: 75.6%;
-	left: 0px;
-	top: 0px;
-	padding:6px;
-	height: 300px;
-}
 
 /*remove text shadow for the themes grid and the theme showcase grid*/
-#views-bootstrap-grid-1 .carousel-caption, 
-#views-bootstrap-grid-2 .carousel-caption
+.front-page-themes .carousel-caption,
+.front-page-showcase .carousel-caption
 {
 	text-align: left;
 	left: 16px;
@@ -67,14 +79,13 @@
 }
 
 /* Styling of the project highlight grid */
-
-#views-bootstrap-grid-2 .row {
-	padding-top: 2em; //
+.front-page-showcase .row {
+	padding-top: 2em;
 	padding-bottom: 2em;
 }
 
 /* This section adds the theme colors to each of the rows in the highlight section */
-
+/*
 #views-bootstrap-grid-2 div:nth-child(1) {
 	background-color: #9b35ce	
 }
@@ -98,10 +109,11 @@
 #views-bootstrap-grid-2 .row:nth-child(6) {
         background-color: #d6d600       
 }
-
+*/
+/*
 [role=banner] .carousel-caption {
 	left: 26px;
-}
+}*/
 
 
 #block-block-2 .row {
@@ -122,20 +134,27 @@
 	padding-left: 0px;
 }
 
-h3 {
-	font-weight:200;
-}
-
+/*
 #views-bootstrap-grid-1 a {
 	color:#000;
-}
-
+}*/
 
 
 [role=navigation] .secondary {
 	display: none;
 }
 
+/* here's test styling for Ulrik's implementation of the front page showcase */
+.theme-showcase .carousel-caption h3 {
+	color: white;
+	background-color: rgba(0,0,0,0.5); /* create dark overlay */
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 2%;
+	/*width: 90%;*/
+	text-align: center;
+}
 
-
-
+.theme-showcase.computation-showcase .carousal-caption h3 {
+	background-color: blue;
+}
