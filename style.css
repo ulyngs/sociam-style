@@ -144,7 +144,8 @@ h3 {
 	display: none;
 }
 
-/* here's test styling for Ulrik's implementation of the front page showcase */
+/* below is test styling for Ulrik's implementation of the front page showcase */
+/* grab titles of the showcased projects */
 .theme-showcase .carousel-caption h3 {
 	color: white;
 	background-color: rgba(0,0,0,0.5); /* create dark overlay */
@@ -155,6 +156,35 @@ h3 {
 	text-align: center;
 }
 
-.theme-showcase.computation-showcase .carousal-caption h3 {
-	background-color: blue;
+/* make colored background of each block */
+.test-computation-showcase, 
+.test-computation-showcase div.view-content {
+	background-color: #9b35ce;
+	margin: 2em;
 }
+.test-curation-showcase, 
+.test-curation-showcase div.view-content {
+	background-color: #0232ae;
+	margin: 2em;
+}
+.test-privacy-showcase, 
+.test-privacy-showcase div.view-content {
+	background-color: #E02323;
+	margin: 2em;
+}
+.test-interaction-showcase, 
+.test-interaction-showcase div.view-content {
+	background-color: #17d8d5;
+	margin: 2em;
+}
+.test-implementation-showcase, 
+.test-implementation-showcase div.view-content {
+	background-color: #47ce35;
+	margin: 2em;
+}
+.test-observatory-showcase, 
+.test-observatory-showcase div.view-content {
+	background-color: #D6d600;
+	margin: 2em;
+}
+
