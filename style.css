@@ -35,7 +35,7 @@ h3 {
 }
 
 /* front page carousel text */
-#views-bootstrap-carousel-1 .carousel-caption {
+.front-page-carousel .carousel-caption {
         background-color: rgba(0,0,0,0.5); /* create dark overlay */
         font-size: 5em;
 	right: 75.6%;
@@ -188,3 +188,33 @@ h3 {
 	margin: 2em;
 }
 
+/*********** PROJECTS PAGE *****************/
+/* the individual elements for showing projects associated with themes */
+div.form-item .form-group {
+	display: inline-block; /* show them inline */
+	margin: 10px;
+	border: 3px solid #73AD21;
+}
+
+/* the label */
+.views-exposed-widget label {
+	margin-top: 5px;
+	font-size: 30px;
+}
+
+/* the 'view all' or 'reset' button */
+.views-reset-button {
+
+}
+
+/* style the text overlay on the project images */
+.projects-page .carousel-caption h3 {
+	color: white;
+	background-color: rgba(0,0,0,0.5); /* create dark overlay */
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 2%;
+	/*width: 90%;*/
+	text-align: center;
+	font-size: 1.3em;
+}
