@@ -4,7 +4,15 @@
 
 /* Admin Backend */
 
+.region-footer {
+	text-align: right;
+}
 
+
+.login-menu li {
+	font-size: 0.9em;
+	float: right;
+}
 
 
 .front-image {
@@ -20,29 +28,55 @@
 	padding:1px;
 	padding-left:14px;
 	margin-top: 0px;
-	font-size:40px;
+	font-size:2em;
 }
 
-#block-views-front-image-block .carousel-caption {
+.col-sm-12 {
+  	 padding-left: 0px;
+   	 padding-right:0px;
+}
+
+/*create dark overlay for the text on the front page carousel*/
+#views-bootstrap-carousel-1 .carousel-caption {
         background-color: rgba(0,0,0,0.5);
-        right: 75%;
+        font-size: 5em;
+	right: 75.6%;
 	left: 0px;
 	top: 0px;
-	bottom:0px;
-	padding-top:6px;
-	
+	padding:6px;
+	height: 300px;
 }
 
-#views-bootstrap-grid-1 .col-lg-3 {
-	margin: 0px;
+/*remove text shadow for the themes grid and the theme showcase grid*/
+#views-bootstrap-grid-1 .carousel-caption, 
+#views-bootstrap-grid-2 .carousel-caption
+{
+	text-align: left;
+	left: 16px;
+	top: -5px;
 	padding: 0px;
+	text-shadow: 0 0px 0px rgba(0,0,0,0);
 }
 
-#views-bootstrap-grid-2 .col-lg-3 {
+
+[role=banner] .carousel-caption {
+	left: 26px;
+}
+
+
+#block-block-2 .row {
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+
+#views-bootstrap-grid-1 .col-lg-3 ,#views-bootstrap-grid-2 .col-lg-3 {
         margin: 0px;
         padding: 0px;
 }
 
+#views-bootstrap-grid-2 .row {
+	margin-top: 2em;
+}
 #block-block-2 .col-md-6 {
 	padding-left: 0px;
 }
@@ -55,20 +89,14 @@ h3 {
 	color:#000;
 }
 
-[role=banner] .carousel-caption {
-	left: 26px;
-}
+
 
 [role=navigation] .secondary {
 	display: none;
-}	
+}
 
-.carousel-caption {
-	text-align: left;
-	left: 16px;
-	top: -5px;
-	padding: 0px;
-	text-shadow: 0 0px 0px rgba(0,0,0,0);
+[role=navigation] .navbar-nav {
+	float: right;
 }
 
 .cuadro_intro_hover{
