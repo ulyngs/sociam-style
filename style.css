@@ -4,9 +4,6 @@
 
 /* Admin Backend */
 
-
-
-
 /* **********FRONT PAGE *************** */
 /* the footer */
 .region-footer {
@@ -52,15 +49,6 @@ h3 {
 	line-height: 120%;
 }
 
-/*
-#block-views-front-image-block h3 {
-	color: white;
-	padding:1px;
-	padding-left:14px;
-	margin-top: 0px;
-	font-size:2em;
-} */
-
 .col-sm-12 {
   	 padding-left: 0px;
    	 padding-right:0px;
@@ -80,9 +68,17 @@ h3 {
 
 /* Styling of the project highlight grid */
 .front-page-showcase .row {
-	padding-top: 2em;
-	padding-bottom: 2em;
+	padding-top: 0em;
+	padding-bottom: 0em;
 }
+
+.test-computation-showcase {
+	margin: 2em;
+}
+/* ******** END OF FRONT PAGE STYLING **** */
+
+/* ********** PROJECTS PAGE ********* */
+
 
 /* This section adds the theme colors to each of the rows in the highlight section */
 /*
@@ -114,6 +110,8 @@ h3 {
 [role=banner] .carousel-caption {
 	left: 26px;
 }*/
+
+/*Styling for projects page filter*/
 
 #edit-term-node-tid-depth-wrapper .form-item {
         border: none;
@@ -149,6 +147,21 @@ h3 {
 #edit-term-node-tid-depth-wrapper .form-item-edit-term-node-tid-depth-120 a {
         background-color: #0232ae 
 }  
+
+h2 {
+	font-weight:200;
+}
+
+/* style the text overlay on the project images */
+.projects-page .carousel-caption h3 {
+	color: white;
+	background-color: rgba(0,0,0,0.5); /* create dark overlay */
+	margin-left: 0%;
+	margin-right: 0%;
+	padding: 0%;
+	text-align: left;
+	font-size: 1.3em;/*Styling for projects on projects page*/
+}
 
 #block-block-2 .row {
 	margin-top: 2em;
@@ -237,19 +250,14 @@ div.form-item .form-group {
 	font-weight:200;
 }
 
+#views-bootstrap-grid-1 .col-lg-2 {
+	padding-left: 0px;
+	padding-right: 0px
+}
+
 /* the 'view all' or 'reset' button */
 .views-reset-button {
 
 }
 
-/* style the text overlay on the project images */
-.projects-page .carousel-caption h3 {
-	color: white;
-	background-color: rgba(0,0,0,0.5); /* create dark overlay */
-	margin-left: 10%;
-	margin-right: 10%;
-	padding: 2%;
-	/*width: 90%;*/
-	text-align: center;
-	font-size: 1.3em;
-}
+
