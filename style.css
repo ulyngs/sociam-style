@@ -4,31 +4,39 @@
 
 /* Admin Backend */
 
+/* **********GLOBAL FONT STYLING******** */
+/* make all h2 skinnier */
+h2 {
+	font-weight:200;
+}
+
+/* make all h3 headlines skinnier */
+h3 {
+	font-weight:200;
+}
+
+
 /* **********FRONT PAGE *************** */
 /* the footer */
 .region-footer {
 	text-align: right; /*align the EPSRC etc text to the right*/
 }
 
+/* LOGIN MENUS */
 /* login menu in the footer */
 .login-menu li {
 	font-size: 0.9em;
 	float: right;   /* position the menu links horizontally */
 }
 
-/* user login menu in the page header */
-.page-header {
-	display:none; /* don't display it */
+/* user login menu in the page header - don't display it!*/
+.page-header, [role=navigation] .secondary {
+	display:none;
 }
 
 /* the main menu navbar */
 [role=navigation] .navbar-nav {
 	float: right; /* position it to the right */
-}
-
-/* make all h3 headlines skinnier */
-h3 {
-	font-weight:200;
 }
 
 /* front page carousel text */
@@ -49,67 +57,86 @@ h3 {
 	line-height: 120%;
 }
 
+
 .col-sm-12 {
   	 padding-left: 0px;
    	 padding-right:0px;
 }
 
-
-/*remove text shadow for the themes grid and the theme showcase grid*/
-.front-page-themes .carousel-caption,
-.front-page-showcase .carousel-caption
+/* captions on themes grid - position and remove text shadow*/
+.front-page-themes .carousel-caption
 {
 	text-align: left;
-	left: 16px;
-	top: -5px;
+	left: 30px;
+	top: 0px;
 	padding: 0px;
 	text-shadow: 0 0px 0px rgba(0,0,0,0);
 }
 
-/* Styling of the project highlight grid */
-.front-page-showcase .row {
-	padding-top: 0em;
-	padding-bottom: 0em;
+/* remove spacing between columns on theme grid and highlight grid */
+.front-page-themes div.col,
+.theme-showcase div.col {
+	margin: 0px;
+	padding: 0px;
 }
 
-.test-computation-showcase {
-	margin: 2em;
+/* PROJECT HIGHLIGHT GRID */
+/* captions of the showcased projects */
+.theme-showcase .carousel-caption h3 {
+	color: white;
+	text-shadow: 0 0px 0px rgba(0,0,0,0); /*remove text shadow*/
+	background-color: rgba(0,0,0,0.5); /* create dark overlay */
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 2%;
+	/*width: 90%;*/
+	text-align: center;
 }
+
+/* make linked titles white instead of blue */
+.theme-showcase a {
+	color: #FFF;
+}
+
+/* add some whitespace before the first showcase block */
+.block-computation-showcase {
+	margin-top: 60px;
+}
+
+/* REMOVED - this is for coloring the backgrounds if wanted
+.block-computation-showcase, 
+.block-computation-showcase div.view-content {
+	margin: 0px;
+	background-color: #D6d600;
+}
+.block-data-curation-showcase, 
+.block-data-curation-showcase div.view-content {
+	margin: 0px;
+	background-color: #9b35ce;
+} 
+.block-privacy-showcase, 
+.block-privacy-showcase div.view-content {
+	background-color: #E02323;
+}
+.block-interaction-showcase, 
+.block-interaction-showcase div.view-content {
+	background-color: #17d8d5;
+}
+.block-implementation-showcase, 
+.block-implementation-showcase div.view-content {
+	background-color: #47ce35;
+}
+.block-observatory-showcase, 
+.block-observatory-showcase div.view-content {
+	background-color: #0232ae;
+}*/
+
 /* ******** END OF FRONT PAGE STYLING **** */
 
+
+
+
 /* ********** PROJECTS PAGE ********* */
-
-
-/* This section adds the theme colors to each of the rows in the highlight section */
-/*
-#views-bootstrap-grid-2 div:nth-child(1) {
-	background-color: #9b35ce	
-}
-
-#views-bootstrap-grid-2 .row:nth-child(2) {
-        background-color: #e02323       
-}
-
-#views-bootstrap-grid-2 .row:nth-child(3) {
-        background-color: #17d8b5       
-}
-
-#views-bootstrap-grid-2 .row:nth-child(4) {
-        background-color: #02323ae       
-}
-
-#views-bootstrap-grid-2 .row:nth-child(5) {
-        background-color: #47ce35       
-}
-
-#views-bootstrap-grid-2 .row:nth-child(6) {
-        background-color: #d6d600       
-}
-*/
-/*
-[role=banner] .carousel-caption {
-	left: 26px;
-}*/
 
 /*Styling for projects page filter*/
 
@@ -148,10 +175,6 @@ h3 {
         background-color: #0232ae 
 }  
 
-h2 {
-	font-weight:200;
-}
-
 /* style the text overlay on the project images */
 .projects-page .carousel-caption h3 {
 	color: white;
@@ -168,18 +191,14 @@ h2 {
 	margin-bottom: 3em;
 }
 
-#views-bootstrap-grid-1 .col-lg-3 ,#views-bootstrap-grid-2 .col-lg-3 {
-        margin: 0px;
-        padding: 0px;
-}
-
+/*
 #views-bootstrap-grid-2 .row {
 	margin-top: 2em;
-}
-
+}*/
+/*
 #block-block-2 .col-md-6 {
 	padding-left: 0px;
-}
+}*/
 
 /*
 #views-bootstrap-grid-1 a {
@@ -187,53 +206,6 @@ h2 {
 }*/
 
 
-[role=navigation] .secondary {
-	display: none;
-}
-
-/* below is test styling for Ulrik's implementation of the front page showcase */
-/* grab titles of the showcased projects */
-.theme-showcase .carousel-caption h3 {
-	color: white;
-	background-color: rgba(0,0,0,0.5); /* create dark overlay */
-	margin-left: 10%;
-	margin-right: 10%;
-	padding: 2%;
-	/*width: 90%;*/
-	text-align: center;
-}
-
-/* make colored background of each block */
-.test-computation-showcase, 
-.test-computation-showcase div.view-content {
-	background-color: #9b35ce;
-	margin: 2em;
-}
-.test-curation-showcase, 
-.test-curation-showcase div.view-content {
-	background-color: #0232ae;
-	margin: 2em;
-}
-.test-privacy-showcase, 
-.test-privacy-showcase div.view-content {
-	background-color: #E02323;
-	margin: 2em;
-}
-.test-interaction-showcase, 
-.test-interaction-showcase div.view-content {
-	background-color: #17d8d5;
-	margin: 2em;
-}
-.test-implementation-showcase, 
-.test-implementation-showcase div.view-content {
-	background-color: #47ce35;
-	margin: 2em;
-}
-.test-observatory-showcase, 
-.test-observatory-showcase div.view-content {
-	background-color: #D6d600;
-	margin: 2em;
-}
 
 /*********** PROJECTS PAGE *****************/
 /* the individual elements for showing projects associated with themes */
@@ -250,10 +222,11 @@ div.form-item .form-group {
 	font-weight:200;
 }
 
+/*
 #views-bootstrap-grid-1 .col-lg-2 {
 	padding-left: 0px;
 	padding-right: 0px
-}
+}*/
 
 /* the 'view all' or 'reset' button */
 .views-reset-button {
