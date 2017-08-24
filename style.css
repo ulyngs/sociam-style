@@ -10,11 +10,11 @@ h2 {
 	font-weight:200;
 }
 
-/* make all h3 headlines skinnier */
+/* make all h3 headlines skinnier and remove text shadow*/
 h3 {
 	font-weight:200;
+	text-shadow: 0 0px 0px rgba(0,0,0,0);
 }
-
 
 /* **********FRONT PAGE *************** */
 /* the footer */
@@ -29,7 +29,7 @@ h3 {
 	float: right;   /* position the menu links horizontally */
 }
 
-/* user login menu in the page header - don't display it!*/
+/* user login menu in the page header - don't display it */
 .page-header, [role=navigation] .secondary {
 	display:none;
 }
@@ -63,17 +63,16 @@ h3 {
    	 padding-right:0px;
 }
 
-/* captions on themes grid - position and remove text shadow*/
-.front-page-themes .carousel-caption
-{
+/* captions on themes grid, and themes image on showcase grid - position */
+.front-page-themes .carousel-caption,
+.theme-showcase .row .col:nth-child(1) .carousel-caption {
 	text-align: left;
 	left: 30px;
 	top: 0px;
 	padding: 0px;
-	text-shadow: 0 0px 0px rgba(0,0,0,0);
 }
 
-/* hide the title of the 2nd themes image on the themes grid
+/* hide the title of the 2nd themes image on the themes grid *****
 Selector goes to the themes grid  view, picks the second row, picks the first
 column in that row, and then picks the carousel caption and hides it */
 .front-page-themes .row:nth-child(2) .col:nth-child(1) .carousel-caption {
@@ -89,9 +88,11 @@ column in that row, and then picks the carousel caption and hides it */
 
 /* PROJECT HIGHLIGHT GRID */
 /* captions of the showcased projects */
-.theme-showcase .carousel-caption h3 {
+/*.theme-showcase .carousel-caption h3*/
+.theme-showcase .row .col:nth-child(2) .carousel-caption h3,
+.theme-showcase .row .col:nth-child(3) .carousel-caption h3,
+.theme-showcase .row .col:nth-child(4) .carousel-caption h3 {
 	color: white;
-	text-shadow: 0 0px 0px rgba(0,0,0,0); /*remove text shadow*/
 	background-color: rgba(0,0,0,0.5); /* create dark overlay */
 	margin-left: 10%;
 	margin-right: 10%;
@@ -110,7 +111,12 @@ column in that row, and then picks the carousel caption and hides it */
 	margin-top: 60px;
 }
 
-/* REMOVED - this is for coloring the backgrounds if wanted
+/* add some whitespace in between each showcase block */
+.theme-showcase {
+	margin-bottom: 50px;
+}
+
+/* REMOVED - this is for giving each showcase block background color if wanted
 .block-computation-showcase, 
 .block-computation-showcase div.view-content {
 	margin: 0px;
@@ -190,13 +196,13 @@ column in that row, and then picks the carousel caption and hides it */
 	margin-right: 0%;
 	padding: 0%;
 	text-align: left;
-	font-size: 1.3em;/*Styling for projects on projects page*/
+	font-size: 1.3em;
 }
-
+/*
 #block-block-2 .row {
 	margin-top: 2em;
 	margin-bottom: 3em;
-}
+}*/
 
 /*
 #views-bootstrap-grid-2 .row {
