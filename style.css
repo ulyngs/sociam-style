@@ -73,6 +73,13 @@ h3 {
 	text-shadow: 0 0px 0px rgba(0,0,0,0);
 }
 
+/* hide the title of the 2nd themes image on the themes grid
+Selector goes to the themes grid  view, picks the second row, picks the first
+column in that row, and then picks the carousel caption and hides it */
+.front-page-themes .row:nth-child(2) .col:nth-child(1) .carousel-caption {
+	display: none;
+}
+
 /* remove spacing between columns on theme grid and highlight grid */
 .front-page-themes div.col,
 .theme-showcase div.col {
