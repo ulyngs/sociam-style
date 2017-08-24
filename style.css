@@ -16,7 +16,7 @@
 /* login menu in the footer */
 .login-menu li {
 	font-size: 0.9em;
-	float: right;   /* position the menu links horisontally */
+	float: right;   /* position the menu links horizontally */
 }
 
 /* user login menu in the page header */
@@ -115,6 +115,40 @@ h3 {
 	left: 26px;
 }*/
 
+#edit-term-node-tid-depth-wrapper .form-item {
+        border: none;
+	font-size: 1.08em;
+	font-weight: 300;
+}  
+
+#edit-term-node-tid-depth-wrapper a {
+	color: #fff;
+	padding: 5px;
+}  
+
+#edit-term-node-tid-depth-wrapper .form-item-edit-term-node-tid-depth-116 a {
+        background-color: #e02323 
+}  
+
+#edit-term-node-tid-depth-wrapper .form-item-edit-term-node-tid-depth-115 a {
+        background-color: #17d8b5 
+} 
+
+#edit-term-node-tid-depth-wrapper .form-item-edit-term-node-tid-depth-117 a {
+        background-color: #9b35ce 
+} 
+
+#edit-term-node-tid-depth-wrapper .form-item-edit-term-node-tid-depth-118 a {
+        background-color: #d6d600 
+} 
+
+#edit-term-node-tid-depth-wrapper .form-item-edit-term-node-tid-depth-119 a {
+        background-color: #47ce35 
+}
+
+#edit-term-node-tid-depth-wrapper .form-item-edit-term-node-tid-depth-120 a {
+        background-color: #0232ae 
+}  
 
 #block-block-2 .row {
 	margin-top: 2em;
@@ -200,6 +234,7 @@ div.form-item .form-group {
 .views-exposed-widget label {
 	margin-top: 5px;
 	font-size: 30px;
+	font-weight:200;
 }
 
 /* the 'view all' or 'reset' button */
