@@ -50,14 +50,20 @@ h3 {
 	height: 300px;
 }
 
-/* front page SOCIAM description */
+/* SOCIAM DESCRIPTION */
+/* add white space */
+.front-text {
+	margin-top: 20px;
+	margin-bottom: 40px;
+/* tweak the font */
+}
 .front-text h3 {
 	font-size: 1.3em;
 	font-weight: 220;
 	line-height: 120%;
 }
 
-
+/* WHAT'S THIS HERE FOR??? */
 .col-sm-12 {
   	 padding-left: 0px;
    	 padding-right:0px;
