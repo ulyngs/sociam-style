@@ -4,7 +4,13 @@
 
 /* Admin Backend */
 
-/* **********GLOBAL FONT STYLING******** */
+/***** STYLING DOC INDEX ***** 
+	1. Global Font and margin styling
+	2. Front page
+	3. Projects page
+****************************** */
+
+/* **********1 GLOBAL FONT AND MARGIN STYLING******** */
 /* make all h2 skinnier */
 h2 {
 	font-weight:200;
@@ -16,7 +22,13 @@ h3 {
 	text-shadow: 0 0px 0px rgba(0,0,0,0);
 }
 
-/* **********FRONT PAGE *************** */
+/* keep the site full width */
+.col-sm-12 {
+  	 padding-left: 0px;
+   	 padding-right: 0px;
+}
+
+/* **********2 FRONT PAGE *************** */
 /* the footer */
 .region-footer {
 	text-align: right; /*align the EPSRC etc text to the right*/
@@ -63,12 +75,6 @@ h3 {
 	line-height: 120%;
 }
 
-/* WHAT'S THIS HERE FOR??? */
-.col-sm-12 {
-  	 padding-left: 0px;
-   	 padding-right:0px;
-}
-
 /* captions on themes grid, and themes image on showcase grid - position */
 .front-page-themes .carousel-caption,
 .theme-showcase .row .col:nth-child(1) .carousel-caption {
@@ -104,7 +110,7 @@ column in that row, and then picks the carousel caption and hides it */
 	margin-right: 10%;
 	padding: 2%;
 	/*width: 90%;*/
-	text-align: center;
+	text-align: left;
 }
 
 /* make linked titles white instead of blue */
