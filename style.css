@@ -20,6 +20,52 @@ h2 {
 h3 {
 	font-weight:200;
 	text-shadow: 0 0px 0px rgba(0,0,0,0);
+	text-align: left;
+}
+
+/* move the main container up under the nav bar */
+.main-container {
+	margin-top: -13px;
+}
+/* make the navbar border more subtle */
+.navbar {
+	border-color: rgba(0,0,0,0.2);
+}
+
+/* add styling for big dramatic quote on about page */
+blockquote {
+    /*font-family: Georgia, serif;*/
+    font-size: 18px;
+    font-style: italic;
+    width: 80%;;
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+    border-left: 0px solid #fff
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #7a7a7a;
+}
+
+blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
 }
 
 /* keep the site full width */
@@ -70,7 +116,7 @@ h3 {
 /* tweak the font */
 }
 .front-text h3 {
-	font-size: 1.3em;
+	font-size: 1.4em;
 	font-weight: 220;
 	line-height: 120%;
 }
@@ -157,6 +203,82 @@ column in that row, and then picks the carousel caption and hides it */
 
 /* ******** END OF FRONT PAGE STYLING **** */
 
+/* ********** RESEARCH PAGE ********* */
+/* THEMES DESCRIPTION */
+/* add white space */
+.theme-description {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+/* tweak the font */
+.theme-description h3 {
+	font-size: 1.4em;
+	font-weight: 220;
+	line-height: 120%;
+}
+
+/* PROJECT GRID */
+/* add white space */
+.block-project-list {
+	margin-top: 60px;
+}
+.block-project-list .block-title {
+	margin-left: 20px;
+}
+
+/* make linked titles white */
+.project-list a,
+.panel-theme-projects a {
+	color: #FFF;
+}
+/* remove spacing */
+.project-list .col {
+	margin: 0px;
+	padding: 0px;
+}
+/* style captions */
+.project-list .carousel-caption {
+	background-color: rgba(0,0,0,0.3); /* create dark overlay */
+	margin-left: 0%;
+	margin-right: 5%;
+	padding: 0px;
+}
+.project-list .carousel-caption h3 {
+	font-size: 1.3em;
+}
+
+/* ******** END OF RESEARCH PAGE STYLING **** */
+
+/* ******** INDIVIDUAL THEMES PAGES ***** */
+.panel-theme-image {
+	margin-right: 50px;
+}
+.panel-theme-text {
+	margin-right: 50px;
+	margin-left: 30px;
+}
+
+.panel-theme-projects .col {
+	margin: 0px;
+	padding: 0px;
+}
+/* style captions */
+.panel-theme-projects .carousel-caption h3 {
+	background-color: rgba(0,0,0,0.3);
+	margin-left: 0%;
+	margin-right: 5%;
+	padding: 0px;
+	font-size: 1.4em;
+	position: relative;
+	top: 25px;
+}
+
+/* make linked titles white and style them */
+.panel-theme-projects a {
+	color: #FFF;
+}
+
+
 
 /* ********** PROJECTS PAGE ********* */
 
@@ -227,9 +349,6 @@ column in that row, and then picks the carousel caption and hides it */
 	color:#000;
 }*/
 
-
-
-/*********** PROJECTS PAGE *****************/
 /* the individual elements for showing projects associated with themes */
 div.form-item .form-group {
 	display: inline-block; /* show them inline */
