@@ -108,6 +108,7 @@ column in that row, and then picks the carousel caption and hides it */
 }
 
 /* make linked titles white instead of blue */
+.front-page-themes a,
 .theme-showcase a {
 	color: #FFF;
 }
@@ -125,12 +126,10 @@ column in that row, and then picks the carousel caption and hides it */
 /* REMOVED - this is for giving each showcase block background color if wanted
 .block-computation-showcase, 
 .block-computation-showcase div.view-content {
-	margin: 0px;
 	background-color: #D6d600;
 }
 .block-data-curation-showcase, 
 .block-data-curation-showcase div.view-content {
-	margin: 0px;
 	background-color: #9b35ce;
 } 
 .block-privacy-showcase, 
@@ -151,8 +150,6 @@ column in that row, and then picks the carousel caption and hides it */
 }*/
 
 /* ******** END OF FRONT PAGE STYLING **** */
-
-
 
 
 /* ********** PROJECTS PAGE ********* */
