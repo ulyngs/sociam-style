@@ -130,6 +130,13 @@ blockquote cite:before {
 	padding: 0px;
 }
 
+/* make linked text slightly lighter on hover */
+.front-page-themes .row .col:hover a,
+.theme-showcase .row .col:hover a {
+	opacity: 0.7;
+}
+
+
 /* hide the title of the 2nd themes image on the themes grid *****
 Selector goes to the themes grid  view, picks the second row, picks the first
 column in that row, and then picks the carousel caption and hides it */
@@ -138,8 +145,8 @@ column in that row, and then picks the carousel caption and hides it */
 }
 
 /* remove spacing between columns on theme grid and highlight grid */
-.front-page-themes div.col,
-.theme-showcase div.col {
+.front-page-themes .col,
+.theme-showcase .col {
 	margin: 0px;
 	padding: 0px;
 }
@@ -217,6 +224,11 @@ column in that row, and then picks the carousel caption and hides it */
 	line-height: 120%;
 }
 
+/* for the small version of the theme grid */
+.research-page-themes .carousel-caption h3 {
+	font-size: 1.5em;
+}
+
 /* PROJECT GRID */
 /* add white space */
 .block-project-list {
@@ -231,6 +243,12 @@ column in that row, and then picks the carousel caption and hides it */
 .panel-theme-projects a {
 	color: #FFF;
 }
+
+/* make linked text slightly lighter on hover */
+.project-list .row .col:hover a {
+	opacity: 0.7;
+}
+
 /* remove spacing */
 .project-list .col {
 	margin: 0px;
@@ -247,6 +265,8 @@ column in that row, and then picks the carousel caption and hides it */
 	font-size: 1.3em;
 }
 
+
+
 /* ******** END OF RESEARCH PAGE STYLING **** */
 
 /* ******** INDIVIDUAL THEMES PAGES ***** */
@@ -258,9 +278,9 @@ column in that row, and then picks the carousel caption and hides it */
 .panel-theme-image {
 	margin-right: 50px;
 }
-/*the text reigion on theme mini-panel*/
+/*the text region on theme mini-panel*/
 .panel-theme-text {
-	margin-right: 50px;
+	margin-right: 60px;
 	margin-left: 30px;
 }
 .panel-theme-text h3 {
@@ -277,16 +297,20 @@ column in that row, and then picks the carousel caption and hides it */
 .panel-theme-projects .carousel-caption h3 {
 	background-color: rgba(0,0,0,0.3);
 	margin-left: 0%;
-	margin-right: 3%;
+	margin-right: 0%;
 	padding: 0px;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	position: relative;
-	top: 25px;
+	top: 30px;
 }
 
-/* make linked titles white and style them */
+/* make linked titles white */
 .panel-theme-projects a {
 	color: #FFF;
+}
+/* make linked text lighter on hover */
+.panel-theme-projects .row .col:hover a {
+	opacity: 0.7;
 }
 
 /******IF GOING FOR VERSION A1******/
