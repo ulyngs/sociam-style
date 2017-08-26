@@ -265,14 +265,12 @@ column in that row, and then picks the carousel caption and hides it */
 	font-size: 1.3em;
 }
 
-
-
 /* ******** END OF RESEARCH PAGE STYLING **** */
 
 /* ******** INDIVIDUAL THEMES PAGES ***** */
 /* put some whitspace before entire block, if they're placed on same page */
 .block-mini-panel-theme {
-	margin-top: 30px;
+	margin-top: 100px;
 }
 /*the image region on the theme mini-panel*/
 .panel-theme-image {
@@ -288,6 +286,7 @@ column in that row, and then picks the carousel caption and hides it */
 	font-weight: 220;
 	line-height: 120%;	
 }
+
 /*the columns of the projects region (right) of the theme mini panel*/
 .panel-theme-projects .col {
 	margin: 0px;
@@ -322,9 +321,27 @@ column in that row, and then picks the carousel caption and hides it */
 .two-col-research-theme-grid {
 	margin-top: 25px;
 }
-
+/* make sure this one shows text - shouldn't be overrideen like on the front page */
 .front-page-themes.research-page-themes .row:nth-child(2) .col:nth-child(1) .carousel-caption {
 	display: inline;
+}
+
+/****** the mini panel for a project  ******/
+/* left column top */
+.project-page .panel-col-first .inside {
+	margin-top: 60px;
+	margin-left: 60px;
+}
+/* right column top */
+.project-page .panel-col-last .inside {
+	margin-top: 40px;
+	margin-right: 60px;
+}
+/* style text */
+.project-page .panel-col-last h3 {
+	font-size: 1.4em;
+	font-weight: 220;
+	line-height: 120%;	
 }
 
 
