@@ -388,8 +388,9 @@ a.anchor {
 .block-publications .view-content {
 	margin-top: 30px;
 }
-
-
+.block-publications .views-reset-button {
+	margin-top: 8px;
+}
 
 
 
