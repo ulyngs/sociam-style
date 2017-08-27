@@ -422,29 +422,35 @@ a.anchor {
 	color:#000;
 }*/
 
-/* the individual elements for showing projects associated with themes */
-div.form-item .form-group {
-	display: inline-block; /* show them inline */
-	margin: 10px;
-	border: 3px solid #73AD21;
+/***************** 4 PUBLICATIONS PAGE ***************/
+
+/* filter text labels */
+.block-publications label {
+	font-size: 1.4em;
+	font-weight: 200;
+}
+/* option text */
+.block-publications option {
+	font-size: 1em;
+}
+/* the individual exposed filter outer divs */
+.block-publications .views-exposed-widget {
+	display: inline-block;
 }
 
-/* the label */
-.views-exposed-widget label {
-	margin-top: 5px;
-	font-size: 30px;
-	font-weight:200;
+/* make the forms the same height */
+.block-publications .form-select {
+	height: 8em;
+	overflow: auto;
+	font-size: 1em;
 }
 
-/*
-#views-bootstrap-grid-1 .col-lg-2 {
-	padding-left: 0px;
-	padding-right: 0px
-}*/
-
-/* the 'view all' or 'reset' button */
-.views-reset-button {
-
+/* give it a bit of whitespace to the left */
+.block-publications .views-exposed-form {
+	margin-top: 10px;
+	margin-left: 50px;
 }
-
-
+/* add a bit of whitespace before showing the publication results */
+.block-publications .view-content {
+	margin-top: 30px;
+}
