@@ -273,9 +273,7 @@ a.anchor {
 	font-size: 1.3em;
 }
 
-/* ******** END OF RESEARCH PAGE STYLING **** */
-
-/* ******** INDIVIDUAL THEMES PAGES ***** */
+/* ******** 3.1 INDIVIDUAL THEMES ***** */
 /* put some whitspace before entire block, if they're placed on same page */
 .block-mini-panel-theme {
 	margin-top: 100px;
@@ -334,10 +332,11 @@ a.anchor {
 	display: inline;
 }
 
+/*    3.2. THE INDIVIDUAL PROJECT PAGES   */
 /****** the mini panel for a project  ******/
 /* left column top */
 .project-page .panel-col-first .inside {
-	margin-top: 60px;
+	margin-top: 40px;
 	margin-left: 60px;
 }
 /* right column top */
@@ -351,7 +350,53 @@ a.anchor {
 	font-weight: 220;
 	line-height: 120%;	
 }
+.project-page th {
+	font-size: 1.8em;
+	font-weight: 100;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
+/***************** 4 PUBLICATIONS PAGE ***************/
+
+/* filter text labels */
+.block-publications label {
+	font-size: 1.4em;
+	font-weight: 200;
+}
+/* option text */
+.block-publications option {
+	font-size: 1em;
+}
+/* the individual exposed filter outer divs */
+.block-publications .views-exposed-widget {
+	display: inline-block;
+}
+
+/* make the forms the same height */
+.block-publications .form-select {
+	height: 8em;
+	overflow: auto;
+	font-size: 1em;
+}
+
+/* give it a bit of whitespace to the left */
+.block-publications .views-exposed-form {
+	margin-top: 10px;
+	margin-left: 50px;
+}
+/* add a bit of whitespace before showing the publication results */
+.block-publications .view-content {
+	margin-top: 30px;
+}
+
+
+
+
+
+
+/***************************************************/
+/**************NO LONGER IN USE*********************/
+/***************************************************/
 
 /* ********** PROJECTS PAGE ********* */
 
@@ -401,56 +446,4 @@ a.anchor {
 	padding: 0%;
 	text-align: left;
 	font-size: 1.3em;
-}
-/*
-#block-block-2 .row {
-	margin-top: 2em;
-	margin-bottom: 3em;
-}*/
-
-/*
-#views-bootstrap-grid-2 .row {
-	margin-top: 2em;
-}*/
-/*
-#block-block-2 .col-md-6 {
-	padding-left: 0px;
-}*/
-
-/*
-#views-bootstrap-grid-1 a {
-	color:#000;
-}*/
-
-/***************** 4 PUBLICATIONS PAGE ***************/
-
-/* filter text labels */
-.block-publications label {
-	font-size: 1.4em;
-	font-weight: 200;
-}
-/* option text */
-.block-publications option {
-	font-size: 1em;
-}
-/* the individual exposed filter outer divs */
-.block-publications .views-exposed-widget {
-	display: inline-block;
-}
-
-/* make the forms the same height */
-.block-publications .form-select {
-	height: 8em;
-	overflow: auto;
-	font-size: 1em;
-}
-
-/* give it a bit of whitespace to the left */
-.block-publications .views-exposed-form {
-	margin-top: 10px;
-	margin-left: 50px;
-}
-/* add a bit of whitespace before showing the publication results */
-.block-publications .view-content {
-	margin-top: 30px;
 }
