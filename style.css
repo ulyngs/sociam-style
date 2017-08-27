@@ -210,7 +210,15 @@ column in that row, and then picks the carousel caption and hides it */
 
 /* ******** END OF FRONT PAGE STYLING **** */
 
-/* ********** RESEARCH PAGE ********* */
+/* ********** 3 RESEARCH PAGE ********* */
+/* position the jump-to anchors a bit higher so the navbar doesn't get in the way */
+a.anchor {
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
+}
+
 /* THEMES DESCRIPTION */
 /* add white space */
 .theme-description {
