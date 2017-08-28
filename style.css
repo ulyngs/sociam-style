@@ -366,6 +366,7 @@ a.anchor {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+
 /***************** 4 PUBLICATIONS PAGE ***************/
 
 /* filter text labels */
@@ -385,13 +386,14 @@ a.anchor {
 	padding: 0;
 }
 
+/* the filters to the left - add a bit of whitespace and make sure they show vertically */
 .block-publications .firstUnit .views-exposed-widget {
 	margin-bottom: 20px;
 	display: block;
 	clear: both;
 }
 
-/* give it a bit of whitespace to the left */
+/* add a bit of whitespace to the left */
 .block-publications .views-exposed-form {
 	margin-top: 0px;
 	margin-left: 30px;
@@ -459,7 +461,9 @@ a.anchor {
 	border: 0;
 	box-shadow: none;
 }
-
+.block-publications .lastUnit .views-submit-button {
+	display: none;
+}
 
 
 /***************************************************/
