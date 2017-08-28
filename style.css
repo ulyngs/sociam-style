@@ -337,18 +337,28 @@ a.anchor {
 /* left column top */
 .project-page .panel-col-first .inside {
 	margin-top: 40px;
-	margin-left: 60px;
+	margin-left: 10%;
+	margin-right: 5%;
 }
 /* right column top */
 .project-page .panel-col-last .inside {
 	margin-top: 40px;
-	margin-right: 60px;
+	margin-right: 10%;
+	margin-left: 5%;
 }
+
+/* remove padding for text panel */ 
+.project-page .panel-col-last .panel-theme-text {
+	margin-left: 0px;
+	margin-bottom: 40px;
+}
+
+
 /* style text */
 .project-page .panel-col-last h3 {
 	font-size: 1.4em;
 	font-weight: 220;
-	line-height: 120%;	
+	line-height: 120%;
 }
 .project-page th {
 	font-size: 1.8em;
@@ -364,34 +374,91 @@ a.anchor {
 	font-weight: 200;
 }
 /* option text */
-.block-publications option {
-	font-size: 1em;
+.block-publications .firstUnit option {
+	font-size: 14px;
 }
-/* the individual exposed filter outer divs */
-.block-publications .views-exposed-widget {
-	display: inline-block;
-}
-
 /* make the forms the same height */
 .block-publications .form-select {
 	height: 8em;
 	overflow: auto;
 	font-size: 1em;
+	padding: 0;
+}
+
+.block-publications .firstUnit .views-exposed-widget {
+	margin-bottom: 20px;
+	display: block;
+	clear: both;
 }
 
 /* give it a bit of whitespace to the left */
 .block-publications .views-exposed-form {
-	margin-top: 10px;
-	margin-left: 50px;
+	margin-top: 0px;
+	margin-left: 30px;
 }
 /* add a bit of whitespace before showing the publication results */
-.block-publications .view-content {
+.block-publications .lastUnit .view-content {
 	margin-top: 30px;
 }
-.block-publications .views-reset-button {
-	margin-top: 8px;
+
+/* style table - remove grey background color for odd rows */
+.block-publications tbody tr:nth-of-type(odd) {
+	background-color: #FFF;
+}
+/* make the rows the same background color on hover */
+.block-publications tbody tr:hover {
+	background-color: #f5f5f5;
+}
+/* make the borders white */
+.block-publications tbody td {
+	border: 1px solid #FFF;
 }
 
+/***** POSITION THE FILTERS ******/
+/* for the left column, don't display the search filter */
+.block-publications .firstUnit .views-exposed-widget:nth-child(4) {
+	display: none;
+}
+/* put the reset button in it's own block */
+.block-publications .firstUnit .views-exposed-widget,
+.block-publications .firstUnit .views-reset-button {
+	display: block;
+	float: left;
+}
+.block-publications .firstUnit .views-submit-button {
+	display: none;
+}
+.block-publications .firstUnit .views-reset-button {
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* in the right column, don't display the type, theme, and project strand filters */
+.block-publications .lastUnit .views-exposed-widget:nth-child(1),
+.block-publications .lastUnit .views-exposed-widget:nth-child(2),
+.block-publications .lastUnit .views-exposed-widget:nth-child(3),
+.block-publications .lastUnit .views-reset-button {
+	display: none;
+}
+
+/* remove the margin from the search block */
+.block-publications .lastUnit .views-exposed-form {
+	margin: 0px;
+}
+/* move the right col a bit to the left */
+.block-publications .lastUnit {
+	position: relative;
+	left: -10px;
+}
+/* there's a weird line at the bottom - kill it */
+.block-publications .panel-line {
+	display: none;
+}
+.block-publications .firstUnit select {
+	border: 0;
+	box-shadow: none;
+}
 
 
 
