@@ -353,19 +353,37 @@ a.anchor {
 	margin-bottom: 40px;
 }
 
-
 /* style text */
 .project-page .panel-col-last h3 {
 	font-size: 1.4em;
 	font-weight: 220;
 	line-height: 120%;
 }
-.project-page th {
-	font-size: 1.8em;
-	font-weight: 100;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+.project-page thead th {
+	font-size: 30px;
+	font-weight: 200;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans serif;
 }
-
+/* pull the Publications headline in line with the other headlines */
+.project-page thead .views-field-citation {
+	padding: 0;
+	margin: 0;
+}
+/* border for the publications result */
+.project-page thead tr th {
+	border-bottom: 2px solid #ddd;
+}
+.project-page tbody tr td {
+	border-top: 2px solid #ddd;
+}
+/* border under the project and project investigator titles */
+.project-page .pane-title {
+	border-bottom: 2px solid #ddd;
+}
+/* remove border around image */
+.project-page .panel-col-first tbody tr td {
+	border: none;
+}
 
 /***************** 4 PUBLICATIONS PAGE ***************/
 
@@ -374,6 +392,7 @@ a.anchor {
 	font-size: 1.4em;
 	font-weight: 200;
 }
+
 /* option text */
 .block-publications .firstUnit option {
 	font-size: 14px;
