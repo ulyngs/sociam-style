@@ -195,6 +195,12 @@ column in that row, and then picks the carousel caption and hides it */
 /* the theme text to the left */
 .two-col-research-panel .panel-theme-text {
 	margin-left: 0px;
+	margin-right: 100px;
+} /* and the actual inner text of the theme text to the left */
+.two-col-research-panel .panel-theme-text h3 {
+	font-size: 1.4em;
+	font-weight: 220;
+	line-height: 120%;
 }
 /* the theme grid to the right */
 .two-col-research-panel .two-col-research-theme-grid {
@@ -222,20 +228,21 @@ a.anchor {
 	margin-top: 100px;
 }
 /*the image region on the theme mini-panel (left column - it's the theme banner) */
-.panel-theme-image {
+.block-mini-panel-theme .panel-theme-image {
 	margin-right: 50px;
 }
 /*the text region on theme mini-panel (left column) */
-.panel-theme-text {
+.block-mini-panel-theme .panel-theme-text {
 	margin-right: 100px;
-	margin-left: 30px;
+	margin-left: 50px;
 }
-/* style the tex region on the theme mini-panel (left column) */
-.panel-theme-text h3 {
+/* style the text region on the theme mini-panel (left column) */
+.block-mini-panel-theme .panel-theme-text h3 {
 	font-size: 1.4em;
 	font-weight: 220;
 	line-height: 120%;
 }
+/* give the theme projects a bit spacing to the right */
 .block-mini-panel-theme .panel-theme-projects {
 	margin-right: 50px;
 }
