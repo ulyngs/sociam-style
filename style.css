@@ -272,7 +272,7 @@ a.anchor {
 	opacity: 0.7;
 }
 
-/*    3.2. THE INDIVIDUAL PROJECT PAGES   */
+/*    3.2. INDIVIDUAL PROJECT PAGES   */
 /****** the mini panel for a project  ******/
 /* left column top */
 .project-page .panel-col-first .inside {
@@ -286,7 +286,6 @@ a.anchor {
 	margin-right: 10%;
 	margin-left: 5%;
 }
-
 /* remove padding for text panel */ 
 .project-page .panel-col-last .panel-theme-text {
 	margin-left: 0px;
@@ -296,12 +295,20 @@ a.anchor {
 	margin: 0px;
 	padding: 0px;
 }
-
+/* text on the investigator images */
+.project-page .pane-project-investigators .carousel-caption h3 {
+        background-color: rgba(0,0,0,0.5); /* create dark overlay */
+        font-size: 1.3em;
+	position: relative;
+	top: 50px;
+}
+.project-page .pane-project-investigators .carousel-caption a {
+	color: #FFF;
+}
 .project-page .project-publications {
 	margin: 0px;
 	padding: 0px;
 }
-
 /* style text */
 .project-page .panel-col-last h3 {
 	font-size: 1.4em;
@@ -332,6 +339,10 @@ a.anchor {
 /* remove border around image */
 .project-page .panel-col-first tbody tr td {
 	border: none;
+}
+/* style table - remove grey background color for odd rows */
+.project-page tbody tr:nth-of-type(odd) {
+	background-color: #FFF;
 }
 
 /***************** 4 PUBLICATIONS PAGE ***************/
