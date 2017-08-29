@@ -8,6 +8,7 @@
 	1. Global Font and margin styling
 	2. Front page
 	3. Projects page
+	4. About page
 ****************************** */
 
 /* **********1 GLOBAL FONT AND MARGIN STYLING******** */
@@ -179,38 +180,34 @@ column in that row, and then picks the carousel caption and hides it */
 
 /* add some whitespace in between each showcase block */
 .theme-showcase {
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 }
-
-/* REMOVED - this is for giving each showcase block background color if wanted
-.block-computation-showcase, 
-.block-computation-showcase div.view-content {
-	background-color: #D6d600;
-}
-.block-data-curation-showcase, 
-.block-data-curation-showcase div.view-content {
-	background-color: #9b35ce;
-} 
-.block-privacy-showcase, 
-.block-privacy-showcase div.view-content {
-	background-color: #E02323;
-}
-.block-interaction-showcase, 
-.block-interaction-showcase div.view-content {
-	background-color: #17d8d5;
-}
-.block-implementation-showcase, 
-.block-implementation-showcase div.view-content {
-	background-color: #47ce35;
-}
-.block-observatory-showcase, 
-.block-observatory-showcase div.view-content {
-	background-color: #0232ae;
-}*/
-
 /* ******** END OF FRONT PAGE STYLING **** */
 
 /* ********** 3 RESEARCH PAGE ********* */
+
+/* the whole top panel - theme text to the left, theme grid to the right*/
+.two-col-research-panel {
+	margin-top: 60px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+/* the theme text to the left */
+.two-col-research-panel .panel-theme-text {
+	margin-left: 0px;
+}
+/* the theme grid to the right */
+.two-col-research-panel .two-col-research-theme-grid {
+	margin-top: 25px;
+}
+/* make this grid show text of social implementation- shouldn't be overridden like on the front page */
+.two-col-research-panel .two-col-research-theme-grid .row:nth-child(2) .col:nth-child(1) .carousel-caption {
+	display: inline;
+}
+.two-col-research-panel .two-col-research-theme-grid .carousel-caption h3 {
+	font-size: 1.5em;
+}
+
 /* position the jump-to anchors a bit higher so the navbar doesn't get in the way */
 a.anchor {
     display: block;
@@ -219,78 +216,28 @@ a.anchor {
     visibility: hidden;
 }
 
-/* THEMES DESCRIPTION */
-/* add white space */
-.theme-description {
-	margin-top: 20px;
-	margin-bottom: 40px;
+/* ******** 3.1 INDIVIDUAL THEMES ***** */
+/* put some whitespace before each block of themes and their projects*/
+.block-mini-panel-theme {
+	margin-top: 100px;
 }
-/* tweak the font */
-.theme-description h3 {
+/*the image region on the theme mini-panel (left column - it's the theme banner) */
+.panel-theme-image {
+	margin-right: 50px;
+}
+/*the text region on theme mini-panel (left column) */
+.panel-theme-text {
+	margin-right: 100px;
+	margin-left: 30px;
+}
+/* style the tex region on the theme mini-panel (left column) */
+.panel-theme-text h3 {
 	font-size: 1.4em;
 	font-weight: 220;
 	line-height: 120%;
 }
-
-/* for the small version of the theme grid */
-.research-page-themes .carousel-caption h3 {
-	font-size: 1.5em;
-}
-
-/* PROJECT GRID */
-/* add white space */
-.block-project-list {
-	margin-top: 60px;
-}
-.block-project-list .block-title {
-	margin-left: 20px;
-}
-
-/* make linked titles white */
-.project-list a,
-.panel-theme-projects a {
-	color: #FFF;
-}
-
-/* make linked text slightly lighter on hover */
-.project-list .row .col:hover a {
-	opacity: 0.7;
-}
-
-/* remove spacing */
-.project-list .col {
-	margin: 0px;
-	padding: 0px;
-}
-/* style captions */
-.project-list .carousel-caption {
-	background-color: rgba(0,0,0,0.3); /* create dark overlay */
-	margin-left: 0%;
-	margin-right: 5%;
-	padding: 0px;
-}
-.project-list .carousel-caption h3 {
-	font-size: 1.3em;
-}
-
-/* ******** 3.1 INDIVIDUAL THEMES ***** */
-/* put some whitspace before entire block, if they're placed on same page */
-.block-mini-panel-theme {
-	margin-top: 100px;
-}
-/*the image region on the theme mini-panel*/
-.panel-theme-image {
+.block-mini-panel-theme .panel-theme-projects {
 	margin-right: 50px;
-}
-/*the text region on theme mini-panel*/
-.panel-theme-text {
-	margin-right: 60px;
-	margin-left: 30px;
-}
-.panel-theme-text h3 {
-	font-size: 1.4em;
-	font-weight: 220;
-	line-height: 120%;	
 }
 
 /*the columns of the projects region (right) of the theme mini panel*/
@@ -318,20 +265,6 @@ a.anchor {
 	opacity: 0.7;
 }
 
-/******IF GOING FOR VERSION A1******/
-.two-col-research-panel {
-	margin-top: 60px;
-	margin-left: 50px;
-	margin-right: 70px;
-}
-.two-col-research-theme-grid {
-	margin-top: 25px;
-}
-/* make sure this one shows text - shouldn't be overrideen like on the front page */
-.front-page-themes.research-page-themes .row:nth-child(2) .col:nth-child(1) .carousel-caption {
-	display: inline;
-}
-
 /*    3.2. THE INDIVIDUAL PROJECT PAGES   */
 /****** the mini panel for a project  ******/
 /* left column top */
@@ -351,6 +284,15 @@ a.anchor {
 .project-page .panel-col-last .panel-theme-text {
 	margin-left: 0px;
 	margin-bottom: 40px;
+}
+.project-page .pane-project-investigators {
+	margin: 0px;
+	padding: 0px;
+}
+
+.project-page .project-publications {
+	margin: 0px;
+	padding: 0px;
 }
 
 /* style text */
@@ -484,6 +426,98 @@ a.anchor {
 	display: none;
 }
 
+/******************ABOUT PAGE *********************/
+
+/*Remove margins on team images*/
+/*and other styling for team*/
+#block-panels-mini-team-panel .col-lg-3 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#block-panels-mini-team-panel h2 {
+	color: #fff;
+	font-weight: 100;
+	font-size: 2em;
+}
+
+/*Changing the text arrangement on the team grids */
+#block-panels-mini-team-panel h3 {
+	font-size: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#block-panels-mini-team-panel .carousel-caption {
+	text-align: left;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	color: rgba(0,0,0,0);	
+}
+
+#block-panels-mini-team-panel .carousel-caption:hover {
+	color: rgba(0,0,0,0.5);
+}
+
+/*
+#mini-panel-mini_panel_test_ .view-universities h3 {
+        font-size: 15px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+}
+
+#mini-panel-mini_panel_test_ .view-universities .carousel-caption {
+        text-align: left;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+	display: none;
+} 
+
+NOT IN USE - ALTERNATE IMPLEMENTATION CHOSEN */
+
+#mini-panel-team_panel .row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+/*background colours of bio panels*/
+
+#mini-panel-mini_panel_test_ {
+	color: #fff   /*make all text white to be visible */
+}
+
+#mini-panel-mini_panel_test_ .panel-col-first {
+	background-color: #002147; /*ox blue*/
+}
+
+#mini-panel-mini_panel_test_ .panel-col {
+	background-color: #005c84; /*soton blue*/
+	width: 34%;		/*make mini-panels sum to full-width (33+34+33=100)*/
+}
+
+#mini-panel-mini_panel_test_ .panel-col-last {
+	background-color: #000;	/*edinburgh black*/
+}
+
+/*team panel*/
+#mini-panel-team_panel .panel-col {
+	width: 34%;
+	background-color: #005c84;
+}
+
+#mini-panel-team_panel .panel-col-first {
+	background-color: #002147; /*ox blue*/
+}
+
+#mini-panel-team_panel .panel-col-last {
+        background-color: #000; /*edinburgh black*/
+}
 
 /***************************************************/
 /**************NO LONGER IN USE*********************/
