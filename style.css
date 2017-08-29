@@ -36,15 +36,16 @@ h3 {
 /* add styling for big dramatic quote on about page */
 blockquote {
     /*font-family: Georgia, serif;*/
-    font-size: 18px;
-    font-style: italic;
-    width: 80%;;
-    margin: 0.25em 0;
-    padding: 0.35em 40px;
-    line-height: 1.45;
-    position: relative;
-    color: #383838;
-    border-left: 0px solid #fff
+	font-size: 18px;
+	font-style: italic;
+	width: 95%;;
+	margin: 0.25em 0;
+	padding: 0.35em 40px;
+	line-height: 1.45;
+ 	position: relative;
+	color: #383838;
+	border-left: 0px solid #fff
+	padding-right: 0px;
 }
 
 blockquote:before {
@@ -445,39 +446,88 @@ a.anchor {
 }
 
 /******************ABOUT PAGE *********************/
-
-/*Remove margins on team images*/
-/*and other styling for team*/
-#block-panels-mini-team-panel .col-lg-3 {
-	padding-left: 0px;
-	padding-right: 0px;
+/* project description */
+.about-social-machines-text p {
+	font-size: 1.3em;
+	font-weight: 200;
+	line-height: 120%;
+}
+.about-social-machines-text blockquote h3 {
+	font-size: 1.2em
 }
 
-#block-panels-mini-team-panel h2 {
-	color: #fff;
-	font-weight: 100;
-	font-size: 2em;
+.nigel-block .nigel-photo-pane {
+	margin-left: 20px;
 }
-
-/*Changing the text arrangement on the team grids */
-#block-panels-mini-team-panel h3 {
-	font-size: 15px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-#block-panels-mini-team-panel .carousel-caption {
+.nigel-block .nigel-photo-pane .carousel-caption {
 	text-align: left;
 	right: 0px;
 	left: 0px;
 	bottom: 0px;
 	padding-bottom: 0px;
 	padding-top: 0px;
-	color: rgba(0,0,0,0);	
+}
+.nigel-block .nigel-bio-pane {
+	margin-left: 0px;
+}
+.nigel-block .nigel-bio-pane .pane-title {
+	font-size: 1.7em;
+	font-weight: 220;
+	margin-top: 20px;
+}
+.nigel-block .nigel-bio-pane .field-content h3 {
+	font-size: 1.3em;
+	font-weight: 200;
+	line-height: 120%;
+	margin-top: 0px;
 }
 
-#block-panels-mini-team-panel .carousel-caption:hover {
-	color: rgba(0,0,0,0.5);
+/*Remove margins on team images*/
+.team-image-panel .col-lg-3 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+/* make 'Team' headlines white */
+.team-image-panel h2 {
+	color: #fff;
+	font-weight: 100;
+	font-size: 2em;
+}
+/* the names of people on images */
+.team-image-panel h3 {
+	font-size: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+/* hide the names and descriptions, make them visible on hover */
+.team-image-panel .carousel-caption p,
+.team-image-panel .carousel-caption h3 {
+	visibility: hidden;
+}
+.team-image-panel .col-lg-3:hover p {
+	visibility: visible;
+	color: #FFF;
+}
+.team-image-panel .col-lg-3:hover h3 {
+	visibility: visible;
+	color: #FFF;
+}
+/* the whole carousel caption */
+.team-image-panel .carousel-caption {
+	visibility: hidden;
+	text-align: left;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	color: rgba(0,0,0,0);
+}
+/* make it visible on hover */
+.team-image-panel .col-lg-3:hover .carousel-caption {
+	visibility: visible;
+	color: #FFF;
+	background-color: rgba(0,0,0,0.5);
 }
 
 /*
