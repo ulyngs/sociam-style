@@ -446,7 +446,16 @@ a.anchor {
 }
 
 /******************ABOUT PAGE *********************/
+/* this image is just put there to make column alignment work */
+#hide-nigel {
+	visibility: hidden;
+}
+
 /* project description */
+.about-social-machines-text {
+	margin: 60px 50px 0px 0px;
+	padding: 0px;
+}
 .about-social-machines-text p {
 	font-size: 1.3em;
 	font-weight: 200;
@@ -456,20 +465,38 @@ a.anchor {
 	font-size: 1.2em
 }
 
+/* give it a bit of space before the team blocks */
+.nigel-block {
+	margin-bottom: 60px;
+}
+/* give Nigel some whitespace */
 .nigel-block .nigel-photo-pane {
-	margin-left: 20px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
 }
-.nigel-block .nigel-photo-pane .carousel-caption {
-	text-align: left;
-	right: 0px;
-	left: 0px;
-	bottom: 0px;
-	padding-bottom: 0px;
-	padding-top: 0px;
+.nigel-block .nigel-photo-pane .col-lg-12 {
+	position: relative;
 }
+.nigel-block .nigel-photo-pane .col-lg-12 img {
+	position: absolute;
+	top: 0px;
+	left: 33%;
+}
+.nigel-block .nigel-photo-pane .col-lg-12 div.carousel-caption {
+	position: absolute;
+	top: 150px;
+	left: 33%;
+	width: 150px;
+	height: 70px;
+	padding: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+
 .nigel-block .nigel-bio-pane {
-	margin-left: 0px;
+	margin: 0px 50px 0px 0px;
+	padding: 0px;
 }
+
 .nigel-block .nigel-bio-pane .pane-title {
 	font-size: 1.7em;
 	font-weight: 220;
@@ -630,13 +657,3 @@ NOT IN USE - ALTERNATE IMPLEMENTATION CHOSEN */
         background-color: #0232ae 
 }  
 
-/* style the text overlay on the project images */
-.projects-page .carousel-caption h3 {
-	color: white;
-	background-color: rgba(0,0,0,0.5); /* create dark overlay */
-	margin-left: 0%;
-	margin-right: 0%;
-	padding: 0%;
-	text-align: left;
-	font-size: 1.3em;
-}
