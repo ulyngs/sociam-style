@@ -496,7 +496,7 @@ a.anchor {
 .nigel-block .nigel-bio-pane .pane-title {
 	font-size: 1.7em;
 	font-weight: 220;
-	margin-top: 20px;
+	margin-top: 30px;
 } /* set the font of nigel's bio to be similar to the project description */
 .nigel-block .nigel-bio-pane .field-content h3 {
 	font-size: 1.3em;
@@ -504,10 +504,16 @@ a.anchor {
 	line-height: 120%;
 	margin-top: 0px;
 }
-
-.panel-col-first {
-	border: 2px solid red;
+/* make the columns equal height - SOLUTION DOESN'T WORK!!! */
+.uni-and-big-dogs .panel-display {
+	display: table; /* make the container element behave like a table */
 }
+.uni-and-big-dogs .panel-col-first,
+.uni-and-big-dogs .panel-col,
+.uni-and-big-dogs .panel-col-last {
+	display: table-cell; /* make the columns in the container behave like table cells */
+}
+
 
 /* do some styling of uni logos */
 .uni-and-big-dogs .uni-logo {
@@ -573,15 +579,47 @@ a.anchor {
 	color: #FFF;
 	background-color: rgba(0,0,0,0.5);
 }
+/* hide the placeholder text in the nigel and advisory mini panels */
+.hide-text {
+	visibility: hidden;
+}
 
+/* style the tites */
+.panel-advisors-and-partners  .pane-title {
+	font-size: 2.2em;
+	font-weight: 270;
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
 
+.panel-advisors-and-partners .advisory-view .col-lg-3 {
+	margin: 0px;
+	padding: 0px;
+}
+.panel-advisors-and-partners .advisory-view {
+	padding-left: 15px;
+	padding-right: 50px;
+}
+.panel-advisors-and-partners .carousel-caption h3 {
+	background-color: rgba(0,0,0,0.5);
+	margin-left: 0%;
+	margin-right: 0%;
+	padding: 0px;
+	font-size: 1.1em;
+	position: relative;
+	top: 40px;
+}
+.panel-advisors-and-partners .carousel-caption p {
+	position: relative;
+	top: 30px;
+}
 
+.partners-grid col-lg-3 {
+	position: relative
+}
 
-NOT IN USE - ALTERNATE IMPLEMENTATION CHOSEN */
-
-#mini-panel-team_panel .row {
-	margin-left: 0px;
-	margin-right: 0px;
+.partners-grid img {
+	padding: 20px;
 }
 
 /*background colours of bio panels*/
