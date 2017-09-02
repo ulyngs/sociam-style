@@ -107,7 +107,7 @@ blockquote cite:before {
 	left: 0px;
 	top: 0px;
 	padding:6px;
-	height: 300px;
+	height: 800px; /* make the background darkness full-height */ 
 }
 
 /* SOCIAM DESCRIPTION */
@@ -127,7 +127,7 @@ blockquote cite:before {
 .front-page-themes .carousel-caption,
 .theme-showcase .row .col:nth-child(1) .carousel-caption {
 	text-align: left;
-	left: 30px;
+	left: 20px;
 	top: 0px;
 	padding: 0px;
 }
@@ -161,10 +161,9 @@ column in that row, and then picks the carousel caption and hides it */
 .theme-showcase .row .col:nth-child(4) .carousel-caption h3 {
 	color: white;
 	background-color: rgba(0,0,0,0.5); /* create dark overlay */
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 0%;
+	margin-right: 0%;
 	padding: 2%;
-	/*width: 90%;*/
 	text-align: left;
 }
 
@@ -201,7 +200,7 @@ column in that row, and then picks the carousel caption and hides it */
 .two-col-research-panel .panel-theme-text h3 {
 	font-size: 1.4em;
 	font-weight: 220;
-	line-height: 120%;
+	line-height: 130%;
 }
 /* the theme grid to the right */
 .two-col-research-panel .two-col-research-theme-grid {
@@ -446,7 +445,7 @@ a.anchor {
 }
 
 /******************ABOUT PAGE *********************/
-/* this image is just put there to make column alignment work */
+/* this image is just there to make column alignment work */
 #hide-nigel {
 	visibility: hidden;
 }
@@ -465,23 +464,20 @@ a.anchor {
 	font-size: 1.2em
 }
 
-/* give it a bit of space before the team blocks */
+/* add a bit of space before the team blocks */
 .nigel-block {
 	margin-bottom: 60px;
 }
-/* give Nigel some whitespace */
-.nigel-block .nigel-photo-pane {
-	margin: 0px 0px 0px 0px;
-	padding: 0px;
-}
+/* set nigel's div to relative position */
 .nigel-block .nigel-photo-pane .col-lg-12 {
 	position: relative;
 }
+/* position nigel */
 .nigel-block .nigel-photo-pane .col-lg-12 img {
 	position: absolute;
 	top: 0px;
 	left: 33%;
-}
+} /* position nigel's caption */
 .nigel-block .nigel-photo-pane .col-lg-12 div.carousel-caption {
 	position: absolute;
 	top: 150px;
@@ -491,17 +487,17 @@ a.anchor {
 	padding: 0;
 	background-color: rgba(0,0,0,0.5);
 }
-
+/* give nigel's bio the same 50px margin as the project description */
 .nigel-block .nigel-bio-pane {
 	margin: 0px 50px 0px 0px;
 	padding: 0px;
 }
-
+/* style the title for nigel's bio */
 .nigel-block .nigel-bio-pane .pane-title {
 	font-size: 1.7em;
 	font-weight: 220;
 	margin-top: 20px;
-}
+} /* set the font of nigel's bio to be similar to the project description */
 .nigel-block .nigel-bio-pane .field-content h3 {
 	font-size: 1.3em;
 	font-weight: 200;
@@ -509,10 +505,31 @@ a.anchor {
 	margin-top: 0px;
 }
 
+.panel-col-first {
+	border: 2px solid red;
+}
+
+/* do some styling of uni logos */
+.uni-and-big-dogs .uni-logo {
+	width: 70%;
+	padding: 15px 0px 20px 50px;
+}
+/* do some styling of co-investigator images */
+.bigdog-headshots {
+	padding-left: 50px;
+}
+/* add padding to co-investigator bios */
+.bigdog-bios {
+	padding: 10px 50px 10px 50px;
+}
+
 /*Remove margins on team images*/
 .team-image-panel .col-lg-3 {
 	padding-left: 0px;
 	padding-right: 0px;
+}
+.team-image-panel .pane-content {
+	padding: 10px 50px 10px 50px;
 }
 /* make 'Team' headlines white */
 .team-image-panel h2 {
@@ -557,22 +574,8 @@ a.anchor {
 	background-color: rgba(0,0,0,0.5);
 }
 
-/*
-#mini-panel-mini_panel_test_ .view-universities h3 {
-        font-size: 15px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-}
 
-#mini-panel-mini_panel_test_ .view-universities .carousel-caption {
-        text-align: left;
-        right: 0px;
-        left: 0px;
-        bottom: 0px;
-        padding-bottom: 0px;
-        padding-top: 0px;
-	display: none;
-} 
+
 
 NOT IN USE - ALTERNATE IMPLEMENTATION CHOSEN */
 
@@ -613,47 +616,5 @@ NOT IN USE - ALTERNATE IMPLEMENTATION CHOSEN */
 #mini-panel-team_panel .panel-col-last {
         background-color: #000; /*edinburgh black*/
 }
-
-/***************************************************/
-/**************NO LONGER IN USE*********************/
-/***************************************************/
-
-/* ********** PROJECTS PAGE ********* */
-
-/*Styling for projects page filter*/
-
-#edit-term-node-tid-depth-wrapper .form-item {
-        border: none;
-	font-size: 1.08em;
-	font-weight: 300;
-}  
-
-#edit-term-node-tid-depth-wrapper a {
-	color: #fff;
-	padding: 5px;
-}  
-
-#edit-term-node-tid-depth-wrapper .form-item-edit-term-node-tid-depth-116 a {
-        background-color: #e02323 
-}  
-
-#edit-term-node-tid-depth-wrapper .form-item-edit-term-node-tid-depth-115 a {
-        background-color: #17d8b5 
-} 
-
-#edit-term-node-tid-depth-wrapper .form-item-edit-term-node-tid-depth-117 a {
-        background-color: #9b35ce 
-} 
-
-#edit-term-node-tid-depth-wrapper .form-item-edit-term-node-tid-depth-118 a {
-        background-color: #d6d600 
-} 
-
-#edit-term-node-tid-depth-wrapper .form-item-edit-term-node-tid-depth-119 a {
-        background-color: #47ce35 
-}
-
-#edit-term-node-tid-depth-wrapper .form-item-edit-term-node-tid-depth-120 a {
-        background-color: #0232ae 
-}  
+  
 
