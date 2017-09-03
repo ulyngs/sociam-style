@@ -504,17 +504,6 @@ a.anchor {
 	line-height: 120%;
 	margin-top: 0px;
 }
-/* make the columns equal height - SOLUTION DOESN'T WORK!!! */
-.uni-and-big-dogs .panel-display {
-	display: table; /* make the container element behave like a table */
-}
-.uni-and-big-dogs .panel-col-first,
-.uni-and-big-dogs .panel-col,
-.uni-and-big-dogs .panel-col-last {
-	display: table-cell; /* make the columns in the container behave like table cells */
-}
-
-
 /* do some styling of uni logos */
 .uni-and-big-dogs .uni-logo {
 	width: 70%;
@@ -528,7 +517,6 @@ a.anchor {
 .bigdog-bios {
 	padding: 10px 50px 10px 50px;
 }
-
 /*Remove margins on team images*/
 .team-image-panel .col-lg-3 {
 	padding-left: 0px;
@@ -536,12 +524,14 @@ a.anchor {
 }
 .team-image-panel .pane-content {
 	padding: 10px 50px 10px 50px;
+	margin-left: 15px;
 }
 /* make 'Team' headlines white */
 .team-image-panel h2 {
 	color: #fff;
 	font-weight: 100;
 	font-size: 2em;
+	margin-left: 50px;
 }
 /* the names of people on images */
 .team-image-panel h3 {
@@ -592,7 +582,7 @@ a.anchor {
 	margin-bottom: 30px;
 }
 
-.panel-advisors-and-partners .advisory-view .col-lg-3 {
+.panel-advisors-and-partners .advisory-view .col {
 	margin: 0px;
 	padding: 0px;
 }
@@ -614,12 +604,8 @@ a.anchor {
 	top: 30px;
 }
 
-.partners-grid col-lg-3 {
-	position: relative
-}
-
 .partners-grid img {
-	padding: 20px;
+	padding: 35px;
 }
 
 /*background colours of bio panels*/
