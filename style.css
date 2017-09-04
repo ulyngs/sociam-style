@@ -155,16 +155,54 @@ column in that row, and then picks the carousel caption and hides it */
 
 /* PROJECT HIGHLIGHT GRID */
 /* captions of the showcased projects */
-/*.theme-showcase .carousel-caption h3*/
+.theme-showcase .row .col:nth-child(2) .carousel-caption,
+.theme-showcase .row .col:nth-child(3) .carousel-caption,
+.theme-showcase .row .col:nth-child(4) .carousel-caption {
+	right: 0px;
+	left: 0px;
+	padding: 5px 20px 4px 5px;
+	/*background-color: rgba(255,245,0,0.8);*/
+	top: 0px;
+	height: 30px;
+	overflow: hidden;
+}
 .theme-showcase .row .col:nth-child(2) .carousel-caption h3,
 .theme-showcase .row .col:nth-child(3) .carousel-caption h3,
 .theme-showcase .row .col:nth-child(4) .carousel-caption h3 {
-	color: white;
-	background-color: rgba(0,0,0,0.6);
+	color: black;
 	margin-left: 0%;
 	margin-right: 0%;
-	padding: 2%;
+	padding: 0px;
+	font-size: 10pt;
+	position: relative;
+	font-weight: 200;
 	text-align: left;
+	margin: 0px;
+}
+/* make them the appropriate color */
+.block-computation-showcase .carousel-caption,
+.computation-project-grid .carousel-caption {
+	background-color: #D6d600;
+}
+.block-data-curation-showcase .carousel-caption,
+.data-curation-project-grid .carousel-caption {
+	background-color: #9b35ce;
+}
+.block-privacy-showcase .carousel-caption,
+.privacy-project-grid .carousel-caption {
+	background-color: #E02323;
+}
+.block-interaction-showcase .carousel-caption,
+.interaction-project-grid .carousel-caption {
+	background-color: #17d8b5;
+}
+.block-implementation-showcase .carousel-caption,
+.implementation-project-grid .carousel-caption {
+	background-color: #47ce35;
+}
+.block-observatory-showcase .carousel-caption,
+.observatory-project-grid .carousel-caption {
+	background-color: #0232ae;
 }
 
 /* make linked titles white instead of blue */
@@ -210,12 +248,20 @@ column in that row, and then picks the carousel caption and hides it */
 .two-col-research-panel .two-col-research-theme-grid .row:nth-child(2) .col:nth-child(1) .carousel-caption {
 	display: inline;
 }
+.two-col-research-panel .two-col-research-them-grid .carousel-caption {
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	
+}
+/* the 'theme 1' etc text */
 .two-col-research-panel .two-col-research-theme-grid .carousel-caption h3 {
 	font-size: 1em;
+	margin: 15px 0px 5px 0px;
 }
 .two-col-research-panel .two-col-research-theme-grid .carousel-caption p {
 	text-shadow: 0 0px 0px rgba(0,0,0,0);
-	font-size: 1.5em;
+	font-size: 1.3em;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 200;
 }
@@ -267,7 +313,7 @@ a.anchor {
 }
 /* style captions */
 .panel-theme-projects .carousel-caption {
-	background-color: rgba(255,245,0,0.8);
+	/*background-color: rgba(255,245,0,0.8);*/
 	right: 0px;
 	left: 0px;
 	top: 0px;
@@ -286,9 +332,16 @@ a.anchor {
 	text-align: left;
 }
 
+.panel-theme-projects img {
+	opacity: 0.5;
+}
+.panel-theme-projects img:hover {
+	opacity: 1;
+}
+
 /* make linked titles white */
 .panel-theme-projects a {
-	color: black;
+	color: #FFF;
 }
 /* make linked text lighter on hover */
 .panel-theme-projects .row .col:hover a {
