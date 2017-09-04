@@ -7,7 +7,7 @@
 /***** STYLING DOC INDEX ***** 
 	1. Global Font and margin styling
 	2. Front page
-	3. Projects page
+	3. Research page
 	4. About page
 ****************************** */
 
@@ -211,7 +211,13 @@ column in that row, and then picks the carousel caption and hides it */
 	display: inline;
 }
 .two-col-research-panel .two-col-research-theme-grid .carousel-caption h3 {
+	font-size: 1em;
+}
+.two-col-research-panel .two-col-research-theme-grid .carousel-caption p {
+	text-shadow: 0 0px 0px rgba(0,0,0,0);
 	font-size: 1.5em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 200;
 }
 
 /* position the jump-to anchors a bit higher so the navbar doesn't get in the way */
@@ -230,6 +236,12 @@ a.anchor {
 /*the image region on the theme mini-panel (left column - it's the theme banner) */
 .block-mini-panel-theme .panel-theme-image {
 	margin-right: 50px;
+}
+.block-mini-panel-theme .panel-theme-image img {
+	height: 70px;
+}
+.block-mini-panel-theme .panel-theme-image h3 {
+	margin-left: 40px;
 }
 /*the text region on theme mini-panel (left column) */
 .block-mini-panel-theme .panel-theme-text {
@@ -579,36 +591,47 @@ a.anchor {
 	visibility: hidden;
 }
 
-/* style the tites */
-.panel-advisors-and-partners  .pane-title {
-	font-size: 2.2em;
-	font-weight: 270;
+/* style advisory board title */
+.panel-advisors-and-partners .advisory-title {
 	margin-top: 80px;
-	margin-bottom: 30px;
 }
 
+/* style the chair + board members titles */
+.panel-advisors-and-partners .sub-heading  .pane-title {
+	font-size: 1.5em;
+	font-weight: 200;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+/* remove spacing between images of advisors */
 .panel-advisors-and-partners .advisory-view .col {
 	margin: 0px;
 	padding: 0px;
-}
+} /* add a bit of whitespace to each side */
 .panel-advisors-and-partners .advisory-view {
 	padding-left: 15px;
 	padding-right: 50px;
 }
-.panel-advisors-and-partners .carousel-caption h3 {
-	background-color: rgba(0,0,0,0.5);
-	margin-left: 0%;
-	margin-right: 0%;
-	padding: 0px;
-	font-size: 1.1em;
-	position: relative;
-	top: 40px;
-}
-.panel-advisors-and-partners .carousel-caption p {
-	position: relative;
-	top: 30px;
-}
 
+/* style the caption text */
+.panel-advisors-and-partners .carousel-caption h3 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 1em;
+}
+/* position their captions at the bottom */
+.panel-advisors-and-partners .carousel-caption {
+	right: 0;
+	padding: 4px 3px 4px 7px;
+	margin: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.4);
+	bottom: 0px;
+}
+.partners-grid {
+	margin-top: 80px;
+}
 .partners-grid img {
 	padding: 35px;
 }
