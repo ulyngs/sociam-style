@@ -237,9 +237,11 @@ a.anchor {
 .block-mini-panel-theme .panel-theme-image {
 	margin-right: 50px;
 }
+/* reduce the height of the theme banner a bit */
 .block-mini-panel-theme .panel-theme-image img {
 	height: 70px;
 }
+/* move the headline in with the grid */
 .block-mini-panel-theme .panel-theme-image h3 {
 	margin-left: 40px;
 }
@@ -258,26 +260,35 @@ a.anchor {
 .block-mini-panel-theme .panel-theme-projects {
 	margin-right: 50px;
 }
-
 /*the columns of the projects region (right) of the theme mini panel*/
 .panel-theme-projects .col {
 	margin: 0px;
 	padding: 0px;
 }
 /* style captions */
+.panel-theme-projects .carousel-caption {
+	background-color: rgba(255,245,0,0.8);
+	right: 0px;
+	left: 0px;
+	top: 0px;
+	padding: 5px 20px 4px 5px;
+	height: 37px;
+	overflow: hidden;
+}
 .panel-theme-projects .carousel-caption h3 {
-	background-color: rgba(0,0,0,0.6);
 	margin-left: 0%;
-	margin-right: 0%;
+	margin-right: 0%
 	padding: 0px;
-	font-size: 1.1em;
+	font-size: 10pt;
 	position: relative;
-	top: 40px;
+	color: black;
+	margin: 0;
+	text-align: left;
 }
 
 /* make linked titles white */
 .panel-theme-projects a {
-	color: #FFF;
+	color: black;
 }
 /* make linked text lighter on hover */
 .panel-theme-projects .row .col:hover a {
@@ -492,17 +503,24 @@ a.anchor {
 /* position nigel */
 .nigel-block .nigel-photo-pane .col-lg-12 img {
 	position: absolute;
-	top: 0px;
+	top: 10px;
 	left: 33%;
-} /* position nigel's caption */
+	width: 200px;
+} 
+
+/* position nigel's caption */
 .nigel-block .nigel-photo-pane .col-lg-12 div.carousel-caption {
 	position: absolute;
-	top: 150px;
+	top: 170px;
 	left: 33%;
-	width: 150px;
-	height: 70px;
+	width: 200px;
+	height: 40px;
 	padding: 0;
 	background-color: rgba(0,0,0,0.5);
+}
+.nigel-block .nigel-photo-pane h3 {
+	font-size: 1.2em;
+	padding-bottom: 10;
 }
 /* give nigel's bio the same 50px margin as the project description */
 .nigel-block .nigel-bio-pane {
@@ -534,13 +552,15 @@ a.anchor {
 .bigdog-bios {
 	padding: 10px 50px 10px 50px;
 }
+
+/*****TEAM IMAGES*******/
 /*Remove margins on team images*/
 .team-image-panel .col-lg-3 {
 	padding-left: 0px;
 	padding-right: 0px;
 }
 .team-image-panel .pane-content {
-	padding: 10px 50px 10px 50px;
+	padding: 10px 50px 0px 50px;
 	margin-left: 15px;
 }
 /* make 'Team' headlines white */
@@ -550,25 +570,42 @@ a.anchor {
 	font-size: 2em;
 	margin-left: 50px;
 }
-/* the names of people on images */
-.team-image-panel h3 {
-	font-size: 15px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+.team-image-panel .pane-title {
+	font-size: 18px;
 }
-/* hide the names and descriptions, make them visible on hover */
-.team-image-panel .carousel-caption p,
+
+.team-image-panel .team-title .pane-content {
+	margin: 0;
+}
+.team-image-panel .team-title h2 {
+	margin: 0;
+	padding: 0;
+}
+
+/* style the caption text */
+.team-image-panel .carousel-caption h3 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 1em;
+}
+.team-image-panel .carousel-caption p {
+	text-shadow: 0 0px 0px rgba(0,0,0,0);
+	font-weight: 200;
+	font-size: 0.8em;
+}
+/* hide the names, make them visible on hover */
 .team-image-panel .carousel-caption h3 {
 	visibility: hidden;
 }
-.team-image-panel .col-lg-3:hover p {
+.team-image-panel .col:hover h3 {
 	visibility: visible;
 	color: #FFF;
 }
-.team-image-panel .col-lg-3:hover h3 {
-	visibility: visible;
+/* make linked names appear white instead of blue */
+.team-image-panel a {
 	color: #FFF;
 }
+
 /* the whole carousel caption */
 .team-image-panel .carousel-caption {
 	visibility: hidden;
@@ -586,11 +623,13 @@ a.anchor {
 	color: #FFF;
 	background-color: rgba(0,0,0,0.5);
 }
+
 /* hide the placeholder text in the nigel and advisory mini panels */
 .hide-text {
 	visibility: hidden;
 }
 
+/****ADVISORY BOARD******/
 /* style advisory board title */
 .panel-advisors-and-partners .advisory-title {
 	margin-top: 80px;
@@ -603,7 +642,6 @@ a.anchor {
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
-
 /* remove spacing between images of advisors */
 .panel-advisors-and-partners .advisory-view .col {
 	margin: 0px;
@@ -613,7 +651,6 @@ a.anchor {
 	padding-left: 15px;
 	padding-right: 50px;
 }
-
 /* style the caption text */
 .panel-advisors-and-partners .carousel-caption h3 {
 	margin: 0px;
