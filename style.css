@@ -160,7 +160,7 @@ column in that row, and then picks the carousel caption and hides it */
 .theme-showcase .row .col:nth-child(3) .carousel-caption h3,
 .theme-showcase .row .col:nth-child(4) .carousel-caption h3 {
 	color: white;
-	background-color: rgba(0,0,0,0.5); /* create dark overlay */
+	background-color: rgba(0,0,0,0.6);
 	margin-left: 0%;
 	margin-right: 0%;
 	padding: 2%;
@@ -254,13 +254,13 @@ a.anchor {
 }
 /* style captions */
 .panel-theme-projects .carousel-caption h3 {
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.6);
 	margin-left: 0%;
 	margin-right: 0%;
 	padding: 0px;
 	font-size: 1.1em;
 	position: relative;
-	top: 30px;
+	top: 40px;
 }
 
 /* make linked titles white */
@@ -275,32 +275,37 @@ a.anchor {
 /*    3.2. INDIVIDUAL PROJECT PAGES   */
 /****** the mini panel for a project  ******/
 /* left column top */
+.project-page .panel-col-first .field-content {
+	width: 100%;
+}
 .project-page .panel-col-first .inside {
 	margin-top: 40px;
-	margin-left: 10%;
-	margin-right: 5%;
+	margin-left: 100px;
 }
 /* right column top */
 .project-page .panel-col-last .inside {
 	margin-top: 40px;
-	margin-right: 10%;
-	margin-left: 5%;
+	margin-right: 100px;
 }
 /* remove padding for text panel */ 
 .project-page .panel-col-last .panel-theme-text {
 	margin-left: 0px;
 	margin-bottom: 40px;
 }
-.project-page .pane-project-investigators {
-	margin: 0px;
+.project-page .pane-project-investigators .view-content {
+	margin: 20px 0px 0px 15px;
+	padding: 0px;
+}
+.project-page .pane-project-investigators .col {
+	margin: 0px ;
 	padding: 0px;
 }
 /* text on the investigator images */
 .project-page .pane-project-investigators .carousel-caption h3 {
         background-color: rgba(0,0,0,0.5); /* create dark overlay */
-        font-size: 1.3em;
+        font-size: 1em;
 	position: relative;
-	top: 50px;
+	top: 55px;
 }
 .project-page .pane-project-investigators .carousel-caption a {
 	color: #FFF;
