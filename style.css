@@ -1,7 +1,3 @@
-/**
- * Place your custom styles here.
- */
-
 /* Admin Backend */
 
 /***** STYLING DOC INDEX ***** 
@@ -182,27 +178,27 @@ column in that row, and then picks the carousel caption and hides it */
 /* make them the appropriate color */
 .block-computation-showcase .carousel-caption,
 .computation-project-grid .carousel-caption {
-	background-color: #D6d600;
+	background-color: #0E71F2;
 }
 .block-data-curation-showcase .carousel-caption,
 .data-curation-project-grid .carousel-caption {
-	background-color: #9b35ce;
+	background-color: #318C07;
 }
 .block-privacy-showcase .carousel-caption,
 .privacy-project-grid .carousel-caption {
-	background-color: #E02323;
+	background-color: #F2A20B;
 }
 .block-interaction-showcase .carousel-caption,
 .interaction-project-grid .carousel-caption {
-	background-color: #17d8b5;
+	background-color: #D82929;
 }
 .block-implementation-showcase .carousel-caption,
 .implementation-project-grid .carousel-caption {
-	background-color: #47ce35;
+	background-color: #9b35ce;
 }
 .block-observatory-showcase .carousel-caption,
 .observatory-project-grid .carousel-caption {
-	background-color: #0232ae;
+	background-color: #868686;
 }
 
 /* make linked titles white instead of blue */
@@ -592,6 +588,7 @@ a.anchor {
 	line-height: 120%;
 	margin-top: 0px;
 }
+
 /* do some styling of uni logos */
 .uni-and-big-dogs .uni-logo {
 	width: 70%;
