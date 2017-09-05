@@ -164,7 +164,6 @@ column in that row, and then picks the carousel caption and hides it */
 	right: 0px;
 	left: 0px;
 	padding: 5px 20px 4px 5px;
-	/*background-color: rgba(255,245,0,0.8);*/
 	top: 0px;
 	height: 30px;
 	overflow: hidden;
@@ -176,7 +175,7 @@ column in that row, and then picks the carousel caption and hides it */
 	margin-left: 0%;
 	margin-right: 0%;
 	padding: 0px;
-	font-size: 10pt;
+	font-size: 12pt;
 	position: relative;
 	font-weight: 200;
 	text-align: left;
@@ -223,6 +222,23 @@ column in that row, and then picks the carousel caption and hides it */
 .theme-showcase {
 	margin-bottom: 0px;
 }
+
+.theme-showcase .row .col:nth-child(2) img,
+.theme-showcase .row .col:nth-child(3) img,
+.theme-showcase .row .col:nth-child(4) img {
+	opacity: 1;
+	filter: brightness(100%);
+	transition: filter 0.05s;
+}
+.theme-showcase .row .col:hover:nth-child(2) img,
+.theme-showcase .row .col:hover:nth-child(3) img,
+.theme-showcase .row .col:hover:nth-child(4) img {
+	opacity: 1;
+	filter: brightness(50%);
+	transition: filter 0.05s;
+}
+
+
 /* ******** END OF FRONT PAGE STYLING **** */
 
 /* ********** 3 RESEARCH PAGE ********* */
@@ -320,8 +336,8 @@ a.anchor {
 	right: 0px;
 	left: 0px;
 	top: 0px;
-	padding: 5px 20px 4px 5px;
-	height: 37px;
+	padding: 5px 5px 4px 5px;
+	height: 25px;
 	overflow: hidden;
 }
 .panel-theme-projects .carousel-caption h3 {
@@ -334,13 +350,13 @@ a.anchor {
 	margin: 0;
 	text-align: left;
 }
-
+/* make the images darker on hover */
 .panel-theme-projects img {
 	opacity: 1;
 	filter: brightness(100%);
 	transition: filter 0.05s;
 }
-.panel-theme-projects img:hover {
+.panel-theme-projects .col:hover img {
 	opacity: 1;
 	filter: brightness(50%);
 	transition: filter 0.05s;
