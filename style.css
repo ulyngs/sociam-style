@@ -329,10 +329,14 @@ a.anchor {
 }
 
 .panel-theme-projects img {
-	opacity: 0.5;
+	opacity: 1;
+	filter: brightness(100%);
+	transition: filter 0.05s;
 }
 .panel-theme-projects img:hover {
 	opacity: 1;
+	filter: brightness(50%);
+	transition: filter 0.05s;
 }
 
 /* make linked titles white */
