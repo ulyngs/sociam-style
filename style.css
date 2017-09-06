@@ -152,6 +152,7 @@ blockquote cite:before {
 	line-height: 120%;
 }
 
+
 /* captions on themes grid, and themes image on showcase grid - position */
 .front-page-themes .carousel-caption,
 .theme-showcase .row .col:nth-child(1) .carousel-caption {
@@ -167,13 +168,80 @@ blockquote cite:before {
 	opacity: 0.7;
 }
 
-
 /* hide the title of the 2nd themes image on the themes grid *****
 Selector goes to the themes grid  view, picks the second row, picks the first
 column in that row, and then picks the carousel caption and hides it */
 .front-page-themes .row:nth-child(2) .col:nth-child(1) .carousel-caption {
 	display: none;
 }
+
+/* COLOR THE FRONT PAGE THEME GRID */
+
+.front-page-themes img {
+  opacity: 0;
+}
+
+.front-page-themes .row:nth-child(1) .col:nth-child(1) {
+  background-color: #FF7800;
+}
+.front-page-themes .row:nth-child(2) .col:nth-child(1) {
+  background-color: #FF7800;  
+}
+
+/* CURRENT OPTION (GOOGLE SCHEME) */
+.front-page-themes .row:nth-child(1) .col:nth-child(2) {
+  background-color: #0E71F2;  
+}
+
+.front-page-themes .row:nth-child(1) .col:nth-child(3) {
+  background-color: #318C07;  
+}
+
+.front-page-themes .row:nth-child(1) .col:nth-child(4) {
+  background-color: #F2A20B;  
+}
+ 
+.front-page-themes .row:nth-child(2) .col:nth-child(2) {
+  background-color: #D82929;  
+}
+
+.front-page-themes .row:nth-child(2) .col:nth-child(3) {
+  background-color: #9b35ce;  
+}
+
+.front-page-themes .row:nth-child(2) .col:nth-child(4) {
+  background-color: #868686;  
+}
+
+
+
+/* ALT OPTION 1 */
+/*
+.front-page-themes .row:nth-child(1) .col:nth-child(2) {
+  background-color: #1b6d0c;  
+}
+
+.front-page-themes .row:nth-child(1) .col:nth-child(3) {
+  background-color: #f4c200;  
+}
+
+.front-page-themes .row:nth-child(1) .col:nth-child(4) {
+  background-color: #9d9d9d;  
+}
+ 
+.front-page-themes .row:nth-child(2) .col:nth-child(2) {
+  background-color: #bc0000;  
+}
+
+.front-page-themes .row:nth-child(2) .col:nth-child(3) {
+  background-color: #4a1700;  
+}
+
+.front-page-themes .row:nth-child(2) .col:nth-child(4) {
+  background-color: #181e48;  
+}*/
+
+
 
 /* remove spacing between columns on theme grid and highlight grid */
 .front-page-themes .col,
