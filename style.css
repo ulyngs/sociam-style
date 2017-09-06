@@ -104,13 +104,39 @@ blockquote cite:before {
 
 /* front page carousel text */
 .front-page-carousel .carousel-caption {
-        background-color: rgba(0,0,0,0.5); /* create dark overlay */
-        font-size: 5em;
-	right: 75.6%;
-	left: 0px;
-	top: 0px;
-	padding:6px;
-	height: 800px; /* make the background darkness full-height */ 
+    background-color: rgba(0,0,0,0.5); /* create dark overlay */
+    text-align:left;
+
+       /* font-size: 5em; */
+	/*	right: 75.6%; */
+	/*	left: 0px;*/
+    /* top: 0px; */
+	
+	/* padding:16px; */
+	/* height: 800px; */ /* make the background darkness full-height */ 
+	/* max changes : */
+
+	/*top:140px;*/
+	/* top:9.5vw; */ /* 45%; */
+	padding:0.5vw 0px 0px 25px;
+	font-weight:bold;
+	top:auto;
+	left:24%;
+	right:0px;
+	bottom:0px;
+	height:40%;
+}
+.front-page-carousel .carousel-caption h3 {
+   /* font-size:32pt; */
+    font-size:2.8vw;
+    margin:0.8vw 0px 0px 0px;
+}
+.front-page-carousel .carousel-caption p {
+    padding:0px;
+    margin:0px;
+    font-weight:200;
+    /*  font-size:21pt; */
+    font-size:1.4vw;
 }
 
 /* SOCIAM DESCRIPTION */
@@ -163,9 +189,14 @@ column in that row, and then picks the carousel caption and hides it */
 .theme-showcase .row .col:nth-child(4) .carousel-caption {
 	right: 0px;
 	left: 0px;
-	padding: 5px 20px 4px 5px;
+
 	top: 0px;
-	height: 30px;
+	/* max changed this to try thicker ones >> 
+	       	    height: 30px; 
+		    padding: 5px 20px 4px 5px;
+        */
+	height:49px;
+	padding: 16px 0px 0px 0px;
 	overflow: hidden;
 }
 .theme-showcase .row .col:nth-child(2) .carousel-caption h3,
@@ -175,12 +206,18 @@ column in that row, and then picks the carousel caption and hides it */
 	margin-left: 0%;
 	margin-right: 0%;
 	padding: 0px;
-	font-size: 12pt;
+	font-size: 13pt;
 	position: relative;
-	font-weight: 200;
+	font-weight: 400;
 	text-align: left;
 	margin: 0px;
 }
+.theme-showcase .row .col:nth-child(2) .carousel-caption h3 a,
+.theme-showcase .row .col:nth-child(3) .carousel-caption h3 a,
+.theme-showcase .row .col:nth-child(4) .carousel-caption h3 a {
+    text-decoration:none;
+}
+
 /* make them the appropriate color */
 .block-computation-showcase .carousel-caption,
 .computation-project-grid .carousel-caption {
@@ -336,15 +373,20 @@ a.anchor {
 	right: 0px;
 	left: 0px;
 	top: 0px;
+	/* max changed this: 
 	padding: 5px 5px 4px 5px;
 	height: 25px;
+       */
+	padding: 5px 0px 0px 5px;
+	height: 30px;
 	overflow: hidden;
 }
 .panel-theme-projects .carousel-caption h3 {
 	margin-left: 0%;
 	margin-right: 0%
 	padding: 0px;
-	font-size: 10pt;
+	font-size: 13pt;
+	font-weight:400;
 	position: relative;
 	color: black;
 	margin: 0;
@@ -400,11 +442,21 @@ a.anchor {
 	padding: 0px;
 }
 /* text on the investigator images */
+.project-page .pane-project-investigators .carousel-caption  {
+    background-color: rgba(0,0,0,0.8); /* create dark overlay */
+    bottom:0px; left: 0px; right:0px;
+    height:28%;
+    padding:2px 0px 0px 4px;
+    text-align:bottom;
+}
 .project-page .pane-project-investigators .carousel-caption h3 {
-        background-color: rgba(0,0,0,0.5); /* create dark overlay */
-        font-size: 1em;
-	position: relative;
-	top: 55px;
+    /* background-color: rgba(0,0,0,0.5); */ /* create dark overlay */
+    padding:0px; margin:0px;
+    font-size: 12pt;
+    line-height:0.9;
+    position: relative;
+    font-weight:300;
+/*	top: 55px; */
 }
 .project-page .pane-project-investigators .carousel-caption a {
 	color: #FFF;
