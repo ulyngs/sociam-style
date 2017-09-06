@@ -176,11 +176,12 @@ column in that row, and then picks the carousel caption and hides it */
 }
 
 /* COLOR THE FRONT PAGE THEME GRID */
-
+/* make the image placeholder files fully see-through*/
 .front-page-themes img {
   opacity: 0;
 }
 
+/* then add background color - first for the theme titles */
 .front-page-themes .row:nth-child(1) .col:nth-child(1) {
   background-color: #FF7800;
 }
@@ -213,9 +214,33 @@ column in that row, and then picks the carousel caption and hides it */
   background-color: #868686;  
 }
 
+/* ALT OPTION 1 - TWEAK GOOGLE SCHEME */
+/*
+.front-page-themes .row:nth-child(1) .col:nth-child(2) {
+  background-color: #256ad6;  
+}
 
+.front-page-themes .row:nth-child(1) .col:nth-child(3) {
+  background-color: #318c07;  
+}
 
-/* ALT OPTION 1 */
+.front-page-themes .row:nth-child(1) .col:nth-child(4) {
+  background-color: #F2A20B;  
+}
+ 
+.front-page-themes .row:nth-child(2) .col:nth-child(2) {
+  background-color: #b41214;  
+}
+
+.front-page-themes .row:nth-child(2) .col:nth-child(3) {
+  background-color: #93299f;  
+}
+
+.front-page-themes .row:nth-child(2) .col:nth-child(4) {
+  background-color: #868686;  
+}*/
+
+/* ALT OPTION 2 - DIFF COLOR PALETTE, EASIER ON EYES */
 /*
 .front-page-themes .row:nth-child(1) .col:nth-child(2) {
   background-color: #1b6d0c;  
