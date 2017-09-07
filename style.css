@@ -154,8 +154,9 @@ blockquote cite:before {
 
 
 /* captions on themes grid, and themes image on showcase grid - position */
-.front-page-themes .carousel-caption,
-.theme-showcase .row .col:nth-child(1) .carousel-caption {
+.theme-grid .carousel-caption,
+.theme-showcase .row .col:nth-child(1) .carousel-caption,
+.theme-banners .carousel-caption {
 	text-align: left;
 	left: 20px;
 	top: 0px;
@@ -163,7 +164,7 @@ blockquote cite:before {
 }
 
 /* make linked text slightly lighter on hover */
-.front-page-themes .row .col:hover a,
+.theme-grid .row .col:hover a,
 .theme-showcase .row .col:hover a {
 	opacity: 0.7;
 }
@@ -171,25 +172,68 @@ blockquote cite:before {
 /* hide the title of the 2nd themes image on the themes grid *****
 Selector goes to the themes grid  view, picks the second row, picks the first
 column in that row, and then picks the carousel caption and hides it */
-.front-page-themes .row:nth-child(2) .col:nth-child(1) .carousel-caption {
+.theme-grid.front-page .row:nth-child(2) .col:nth-child(1) .carousel-caption {
 	display: none;
 }
 
-/* COLOR THE FRONT PAGE THEME GRID */
+/* COLOR THE THEME GRIDS */
 /* make the image placeholder files fully see-through*/
-.front-page-themes img {
+.theme-grid img,
+.theme-showcase img {
   opacity: 0;
 }
 
-/* then add background color - first for the theme titles */
-.front-page-themes .row:nth-child(1) .col:nth-child(1) {
+/* then add background color - first the theme titles.
+This is a slightly darker orange to avid clash w/ yellow
+privacy-theme  */
+.theme-grid.front-page .row:nth-child(1) .col:nth-child(1) {
   background-color: #FF7800;
 }
-.front-page-themes .row:nth-child(2) .col:nth-child(1) {
+.theme-grid.front-page .row:nth-child(2) .col:nth-child(1) {
   background-color: #FF7800;  
 }
 
-/* CURRENT OPTION (GOOGLE SCHEME) */
+/* CURRENT OPTION - tweaked GOOGLE SCHEME, slightly darker
+blue, red, and purple for readability */
+/* this colors theme grids on front page and research page,
+and columns for theme-showcase on front page */
+.theme-grid.front-page .row:nth-child(1) .col:nth-child(2),
+.block-computation-showcase .col,
+.theme-grid.research-page-themes .row:nth-child(1) .col:nth-child(1) {
+  background-color: #256ad6;  
+}
+
+.theme-grid.front-page .row:nth-child(1) .col:nth-child(3),
+.block-data-curation-showcase .col,
+.theme-grid.research-page-themes .row:nth-child(1) .col:nth-child(2) {
+  background-color: #318c07;  
+}
+
+.theme-grid.front-page .row:nth-child(1) .col:nth-child(4),
+.block-privacy-showcase,
+.theme-grid.research-page-themes .row:nth-child(1) .col:nth-child(3) {
+  background-color: #F2A20B;  
+}
+ 
+.theme-grid.front-page .row:nth-child(2) .col:nth-child(2),
+.block-interaction-showcase .col,
+.theme-grid.research-page-themes .row:nth-child(2) .col:nth-child(1) {
+  background-color: #b41214;  
+}
+
+.theme-grid.front-page .row:nth-child(2) .col:nth-child(3),
+.block-implementation-showcase .col,
+.theme-grid.research-page-themes .row:nth-child(2) .col:nth-child(2) {
+  background-color: #93299f;  
+}
+
+.theme-grid.front-page .row:nth-child(2) .col:nth-child(4),
+.block-observatory-showcase .col,
+.theme-grid.research-page-themes .row:nth-child(2) .col:nth-child(3) {
+  background-color: #868686;  
+}
+/* PREVIOUS OPTION (GOOGLE SCHEME) */
+/*
 .front-page-themes .row:nth-child(1) .col:nth-child(2) {
   background-color: #0E71F2;  
 }
@@ -212,35 +256,9 @@ column in that row, and then picks the carousel caption and hides it */
 
 .front-page-themes .row:nth-child(2) .col:nth-child(4) {
   background-color: #868686;  
-}
-
-/* ALT OPTION 1 - TWEAK GOOGLE SCHEME */
-/*
-.front-page-themes .row:nth-child(1) .col:nth-child(2) {
-  background-color: #256ad6;  
-}
-
-.front-page-themes .row:nth-child(1) .col:nth-child(3) {
-  background-color: #318c07;  
-}
-
-.front-page-themes .row:nth-child(1) .col:nth-child(4) {
-  background-color: #F2A20B;  
-}
- 
-.front-page-themes .row:nth-child(2) .col:nth-child(2) {
-  background-color: #b41214;  
-}
-
-.front-page-themes .row:nth-child(2) .col:nth-child(3) {
-  background-color: #93299f;  
-}
-
-.front-page-themes .row:nth-child(2) .col:nth-child(4) {
-  background-color: #868686;  
 }*/
 
-/* ALT OPTION 2 - DIFF COLOR PALETTE, EASIER ON EYES */
+/* ALT OPTION - DIFF COLOR PALETTE */
 /*
 .front-page-themes .row:nth-child(1) .col:nth-child(2) {
   background-color: #1b6d0c;  
@@ -267,15 +285,14 @@ column in that row, and then picks the carousel caption and hides it */
 }*/
 
 
-
-/* remove spacing between columns on theme grid and highlight grid */
+/* remove spacing between columns on theme grid and showcase grid */
 .front-page-themes .col,
 .theme-showcase .col {
 	margin: 0px;
 	padding: 0px;
 }
 
-/* PROJECT HIGHLIGHT GRID */
+/* PROJECT SHOWCASE GRID */
 /* captions of the showcased projects */
 .theme-showcase .row .col:nth-child(2) .carousel-caption,
 .theme-showcase .row .col:nth-child(3) .carousel-caption,
@@ -311,7 +328,34 @@ column in that row, and then picks the carousel caption and hides it */
     text-decoration:none;
 }
 
-/* make them the appropriate color */
+/* apply background color to captions */
+/* CURRENT OPTION - TWEAKED GOOGLE COLOR SCHEME */
+.block-computation-showcase .carousel-caption,
+.computation-project-grid .carousel-caption {
+	background-color: #256ad6;
+}
+.block-data-curation-showcase .carousel-caption,
+.data-curation-project-grid .carousel-caption {
+	background-color: #318C07;
+}
+.block-privacy-showcase .carousel-caption,
+.privacy-project-grid .carousel-caption {
+	background-color: #F2A20B;
+}
+.block-interaction-showcase .carousel-caption,
+.interaction-project-grid .carousel-caption {
+	background-color: #b41214;
+}
+.block-implementation-showcase .carousel-caption,
+.implementation-project-grid .carousel-caption {
+	background-color: #93299f;
+}
+.block-observatory-showcase .carousel-caption,
+.observatory-project-grid .carousel-caption {
+	background-color: #868686;
+}
+/* PREVIOUS OPTION - GOOGLE COLOR SCHEME */
+/*
 .block-computation-showcase .carousel-caption,
 .computation-project-grid .carousel-caption {
 	background-color: #0E71F2;
@@ -335,11 +379,12 @@ column in that row, and then picks the carousel caption and hides it */
 .block-observatory-showcase .carousel-caption,
 .observatory-project-grid .carousel-caption {
 	background-color: #868686;
-}
+}*/
 
 /* make linked titles white instead of blue */
-.front-page-themes a,
-.theme-showcase a {
+.theme-grid.front-page a,
+.theme-showcase a,
+.theme-grid a {
 	color: #FFF;
 }
 
@@ -373,6 +418,17 @@ column in that row, and then picks the carousel caption and hides it */
 
 /* ********** 3 RESEARCH PAGE ********* */
 
+/* BANNER ON THE TOP */
+.research-page-banner {
+  display: none;
+}
+.research-page-banner .carousel-caption {
+  text-align: left;
+  left: 40px;
+  top: 0px;
+  padding: 0px;
+}
+
 /* the whole top panel - theme text to the left, theme grid to the right*/
 .two-col-research-panel {
 	margin-top: 60px;
@@ -401,7 +457,6 @@ column in that row, and then picks the carousel caption and hides it */
 	left: 0px;
 	right: 0px;
 	top: 0px;
-	
 }
 /* the 'theme 1' etc text */
 .two-col-research-panel .two-col-research-theme-grid .carousel-caption h3 {
