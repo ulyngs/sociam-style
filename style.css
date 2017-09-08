@@ -135,21 +135,22 @@ blockquote cite:before {
     padding:0px;
     margin:0px;
     font-weight:200;
-    /*  font-size:21pt; */
+    /*  font-size:21pt; */  
     font-size:1.4vw;
 }
 
 /* SOCIAM DESCRIPTION */
 /* add white space */
 .front-text {
-	margin-top: 20px;
-	margin-bottom: 40px;
+	margin-top: 60px;
+	margin-bottom: 60px;
 /* tweak the font */
 }
-.front-text h3 {
-	font-size: 1.4em;
-	font-weight: 220;
-	line-height: 120%;
+.front-text p {
+  font-size: 1.3em;
+  font-weight: 200;
+  margin-left: 5px;
+  padding: 0;
 }
 
 
@@ -312,7 +313,7 @@ and columns for theme-showcase on front page */
 .theme-showcase .row .col:nth-child(2) .carousel-caption h3,
 .theme-showcase .row .col:nth-child(3) .carousel-caption h3,
 .theme-showcase .row .col:nth-child(4) .carousel-caption h3 {
-	color: black;
+	color: #FFF;;
 	margin-left: 0%;
 	margin-right: 0%;
 	padding: 0px;
@@ -419,8 +420,8 @@ and columns for theme-showcase on front page */
 /* ********** 3 RESEARCH PAGE ********* */
 
 /* BANNER ON THE TOP */
-.research-page-banner {
-  display: none;
+.research-page-banner img {
+  height: 70px;
 }
 .research-page-banner .carousel-caption {
   text-align: left;
@@ -440,11 +441,12 @@ and columns for theme-showcase on front page */
 	margin-left: 0px;
 	margin-right: 100px;
 } /* and the actual inner text of the theme text to the left */
-.two-col-research-panel .panel-theme-text h3 {
-	font-size: 1.4em;
-	font-weight: 220;
-	line-height: 130%;
+.two-col-research-panel .panel-theme-text p {
+	font-size: 1.3em;
+	font-weight: 200;
+	padding-top: 20px;
 }
+
 /* the theme grid to the right */
 .two-col-research-panel .two-col-research-theme-grid {
 	margin-top: 25px;
@@ -470,7 +472,7 @@ and columns for theme-showcase on front page */
 	font-weight: 200;
 }
 
-/* position the jump-to anchors a bit higher so the navbar doesn't get in the way */
+/* position the jump-to anchors a bit higher so navbar doesn't get in the way */
 a.anchor {
     display: block;
     position: relative;
@@ -501,10 +503,9 @@ a.anchor {
 	margin-left: 50px;
 }
 /* style the text region on the theme mini-panel (left column) */
-.block-mini-panel-theme .panel-theme-text h3 {
-	font-size: 1.4em;
-	font-weight: 220;
-	line-height: 120%;
+.block-mini-panel-theme .panel-theme-text p {
+	font-size: 1.3em;
+	font-weight: 200;
 }
 /* give the theme projects a bit spacing to the right */
 .block-mini-panel-theme .panel-theme-projects {
@@ -591,16 +592,16 @@ a.anchor {
 }
 /* text on the investigator images */
 .project-page .pane-project-investigators .carousel-caption  {
-    background-color: rgba(0,0,0,0.8); /* create dark overlay */
+    background-color: rgba(0,0,0,0.6); /* create dark overlay */
     bottom:0px; left: 0px; right:0px;
-    height:28%;
+    height:32%;
     padding:2px 0px 0px 4px;
     text-align:bottom;
 }
 .project-page .pane-project-investigators .carousel-caption h3 {
     /* background-color: rgba(0,0,0,0.5); */ /* create dark overlay */
     padding:0px; margin:0px;
-    font-size: 12pt;
+    font-size: 11pt;
     line-height:0.9;
     position: relative;
     font-weight:300;
@@ -646,6 +647,20 @@ a.anchor {
 .project-page tbody tr:nth-of-type(odd) {
 	background-color: #FFF;
 }
+
+.video-grid-project-page iframe {
+  width: 100%;
+  height: 56.25%;
+}
+.video-grid-project-page .col {
+  margin: 0px 0px 0px 0px;
+  padding: 0 25px 40px 20px;
+  
+}
+.video-grid-project-page {
+  margin-right: 90px;
+}
+
 
 /***************** 4 PUBLICATIONS PAGE ***************/
 
