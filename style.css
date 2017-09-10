@@ -1036,3 +1036,19 @@ a.anchor {
 .video-grid-project-page {
   margin-right: 90px;
 }
+
+
+/**************6. Blog posts *******************/
+.blog-post {
+  margin: 0px 100px 0px 100px;
+  padding: 50px 100px 50px 100px;
+}
+.blog-post .views-field-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+.blog-post .views-field-body {
+  font-size: 1.2em;
+  font-weight: 250;
+}
