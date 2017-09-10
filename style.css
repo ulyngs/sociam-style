@@ -790,6 +790,9 @@ a.anchor {
 .bigdog-bios {
 	padding: 10px 50px 10px 50px;
 }
+.bigdog-bios a {
+  color: black;
+}
 
 /*****TEAM IMAGES*******/
 /*Remove margins on team images*/
