@@ -597,19 +597,13 @@ a.anchor {
 .block-publications .firstUnit option {
 	font-size: 14px;
 }
+
 /* make the forms the same height */
 .block-publications .form-select {
 	height: 8em;
 	overflow: auto;
 	font-size: 1em;
 	padding: 0;
-}
-
-/* the filters to the left - add a bit of whitespace and make sure they show vertically */
-.block-publications .firstUnit .views-exposed-widget {
-	margin-bottom: 20px;
-	display: block;
-	clear: both;
 }
 
 /* add a bit of whitespace to the left */
@@ -637,41 +631,45 @@ a.anchor {
 
 /***** POSITION THE FILTERS ******/
 /* for the left column, don't display the search filter */
-.block-publications .firstUnit .views-exposed-widget:nth-child(4) {
-	display: none;
-}
-/* put the reset button in it's own block */
-.block-publications .firstUnit .views-exposed-widget,
-.block-publications .firstUnit .views-reset-button {
+/* the filters to the left - add a bit of whitespace and make sure they show vertically */
+.block-publications .firstUnit .views-exposed-widget {
+	margin-bottom: 20px;
 	display: block;
-	float: left;
+	clear: both;
+}
+/* put the apply and reset  buttons in their  own block */
+.block-publications .firstUnit div.views-submit-button,
+.block-publications .firstUnit div.views-reset-button {
+  display: inline-block;
 }
 .block-publications .firstUnit .views-submit-button {
-	display: none;
+  clear: left;
 }
 .block-publications .firstUnit .views-reset-button {
-	clear: both;
-	margin: 0px;
-	padding: 0px;
+  clear: right;
+}
+/* hide the search field in the left column */
+.block-publications .firstUnit .views-exposed-widget:nth-child(3) {
+  display: none;
 }
 
-/* in the right column, don't display the type, theme, and project strand filters */
-.block-publications .lastUnit .views-exposed-widget:nth-child(1),
-.block-publications .lastUnit .views-exposed-widget:nth-child(2),
-.block-publications .lastUnit .views-exposed-widget:nth-child(3),
-.block-publications .lastUnit .views-reset-button {
-	display: none;
-}
-
-/* remove the margin from the search block */
-.block-publications .lastUnit .views-exposed-form {
-	margin: 0px;
-}
 /* move the right col a bit to the left */
 .block-publications .lastUnit {
 	position: relative;
 	left: -10px;
 }
+
+/* in the right column, don't display the type and theme-project strand filters */
+.block-publications .lastUnit .views-exposed-widget:nth-child(1),
+.block-publications .lastUnit .views-exposed-widget:nth-child(2),
+.block-publications .lastUnit .views-reset-button {
+	display: none;
+}
+/* remove the margin from the search block */
+.block-publications .lastUnit .views-exposed-form {
+	margin: 0px;
+}
+
 /* there's a weird line at the bottom - kill it */
 .block-publications .panel-line {
 	display: none;
@@ -683,6 +681,38 @@ a.anchor {
 .block-publications .lastUnit .views-submit-button {
 	display: none;
 }
+
+.block-publications .lastUnit .views-exposed-widget label,
+.block-publications .lastUnit .views-exposed-widget .views-widget {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 8px;
+}
+.block-publications .lastUnit .views-exposed-widget input {
+  width: 600px;
+}
+
+/*****COLOR THE FILTERS**********/
+.block-publications .firstUnit .shs-select {
+  background-color: #FFF;
+  width: 70%;
+}
+
+.block-publications .firstUnit .views-submit-button button {
+  background-color: #FF7800;
+  color: #FFF;
+  border-color: #ccc;
+}
+.block-publications .firstUnit .views-reset-button button {
+  background-color: #FFF;
+  color: #FF7800;
+  border-color: #ccc;
+}
+
+
+
+
+
 
 /******************5. ABOUT PAGE *********************/
 /* this image is just there to make column alignment work */
