@@ -5,6 +5,7 @@
 	2. Front page
 	3. Research page
 	4. About page
+	5. Individual team member pages
 ****************************** */
 
 /* **********1 GLOBAL FONT AND MARGIN STYLING******** */
@@ -913,4 +914,95 @@ a.anchor {
         background-color: #000; /*edinburgh black*/
 }
   
+/************5. Individual team member page*********/
 
+.team-member-info .panel-col-first .inside {
+  margin: 40px 80px 0px 80px;
+  font-weight: 200;
+  font-size: 1.3em;
+}
+
+.team-member-info .panel-col-last .inside {
+  margin: 40px 80px 0px 80px;
+}
+
+/*style the team member page*/
+.team-member-info .views-field-title {
+  font-size: 2em;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+.team-member-info .views-field-field-inst {
+  margin-bottom: 5px;
+}
+.team-member-info .views-field-field-role {
+  margin-bottom: 40px;
+}
+.team-member-info .views-field-field-role span,
+.team-member-info .views-field-field-role div {
+  display: inline;
+}
+.team-member-info .views-field-body {
+  margin-bottom: 40px;
+}
+.team-member-info .views-field-field-project .views-label {
+  font-size: 1.5em;
+  font-weight: 200;
+}
+.team-member-info .views-field-field-publications {
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+
+/*style the page with their publications*/
+.page-biblio .region-content {
+  margin: 50px 100px 0px 100px;
+}
+.page-biblio .biblio-separator-bar {
+  background-color: #FFF;
+  border: none;
+  margin: 25px 0px 0px 0px;
+  padding: 0;
+}
+.page-biblio .biblio-filter-status .biblio-current-filters {
+  background-color: #FFF;
+}
+
+
+/* style text */
+.project-page .panel-col-last h3 {
+	font-size: 1.3em;
+	font-weight: 200;
+	line-height: 140%;
+}
+.project-page thead th {
+	font-size: 30px;
+	font-weight: 200;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans serif;
+}
+/* pull the Publications headline in line with the other headlines */
+.project-page thead .views-field-citation {
+	padding: 0;
+	margin: 0;
+}
+/* border under the project, investigator and publications titles */
+.project-page .pane-title,
+.project-page thead tr th {
+	border-bottom: 1px solid #ddd;
+}
+/* remove border around image */
+.project-page .panel-col-first tbody tr td {
+	border: none;
+}
+.project-page tbody tr td {
+	border-top: 2px solid #FFF;
+	padding: 12px 0 0 0;
+}
+/* style table - remove grey background color for odd rows */
+.project-page tbody tr:nth-of-type(odd) {
+	background-color: #FFF;
+}
+
+.video-grid-project-page {
+  margin-right: 90px;
+}
