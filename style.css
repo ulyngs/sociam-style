@@ -32,7 +32,7 @@ h3 {
 /* add styling for big dramatic quote on about page */
 blockquote {
     /*font-family: Georgia, serif;*/
-	font-size: 18px;
+	font-size: 17px;
 	font-style: italic;
 	width: 95%;;
 	margin: 0.25em 0;
@@ -233,58 +233,6 @@ and columns for theme-showcase on front page */
 .theme-grid.research-page-themes .row:nth-child(2) .col:nth-child(3) {
   background-color: #868686;  
 }
-/* PREVIOUS OPTION (GOOGLE SCHEME) */
-/*
-.front-page-themes .row:nth-child(1) .col:nth-child(2) {
-  background-color: #0E71F2;  
-}
-
-.front-page-themes .row:nth-child(1) .col:nth-child(3) {
-  background-color: #318C07;  
-}
-
-.front-page-themes .row:nth-child(1) .col:nth-child(4) {
-  background-color: #F2A20B;  
-}
- 
-.front-page-themes .row:nth-child(2) .col:nth-child(2) {
-  background-color: #D82929;  
-}
-
-.front-page-themes .row:nth-child(2) .col:nth-child(3) {
-  background-color: #9b35ce;  
-}
-
-.front-page-themes .row:nth-child(2) .col:nth-child(4) {
-  background-color: #868686;  
-}*/
-
-/* ALT OPTION - DIFF COLOR PALETTE */
-/*
-.front-page-themes .row:nth-child(1) .col:nth-child(2) {
-  background-color: #1b6d0c;  
-}
-
-.front-page-themes .row:nth-child(1) .col:nth-child(3) {
-  background-color: #f4c200;  
-}
-
-.front-page-themes .row:nth-child(1) .col:nth-child(4) {
-  background-color: #9d9d9d;  
-}
- 
-.front-page-themes .row:nth-child(2) .col:nth-child(2) {
-  background-color: #bc0000;  
-}
-
-.front-page-themes .row:nth-child(2) .col:nth-child(3) {
-  background-color: #4a1700;  
-}
-
-.front-page-themes .row:nth-child(2) .col:nth-child(4) {
-  background-color: #181e48;  
-}*/
-
 
 /* remove spacing between columns on theme grid and showcase grid */
 .front-page-themes .col,
@@ -355,32 +303,6 @@ and columns for theme-showcase on front page */
 .observatory-project-grid .carousel-caption {
 	background-color: #868686;
 }
-/* PREVIOUS OPTION - GOOGLE COLOR SCHEME */
-/*
-.block-computation-showcase .carousel-caption,
-.computation-project-grid .carousel-caption {
-	background-color: #0E71F2;
-}
-.block-data-curation-showcase .carousel-caption,
-.data-curation-project-grid .carousel-caption {
-	background-color: #318C07;
-}
-.block-privacy-showcase .carousel-caption,
-.privacy-project-grid .carousel-caption {
-	background-color: #F2A20B;
-}
-.block-interaction-showcase .carousel-caption,
-.interaction-project-grid .carousel-caption {
-	background-color: #D82929;
-}
-.block-implementation-showcase .carousel-caption,
-.implementation-project-grid .carousel-caption {
-	background-color: #9b35ce;
-}
-.block-observatory-showcase .carousel-caption,
-.observatory-project-grid .carousel-caption {
-	background-color: #868686;
-}*/
 
 /* make linked titles white instead of blue */
 .theme-grid.front-page a,
