@@ -102,7 +102,6 @@ blockquote cite:before {
   width:100%;
 }
 
-
 /* front page carousel text */
 .front-page-carousel .carousel-caption {
     background-color: rgba(0,0,0,0.5); /* create dark overlay */
@@ -139,7 +138,10 @@ blockquote cite:before {
     /*  font-size:21pt; */  
     font-size:1.4vw;
 }
-
+.front-page-carousel .carousel-caption a {
+  color: #FFF;
+  text-decoration: none;
+}
 /* SOCIAM DESCRIPTION */
 /* add white space */
 .front-text {
@@ -774,6 +776,11 @@ a.anchor {
 	font-size: 1.3em;
 	font-weight: 200;
 	margin-top: 0px;
+}
+
+/* remove the horizontal scroll bars inside the panels */
+.uni-and-big-dogs .pane-content {
+  overflow: hidden;
 }
 
 /* do some styling of uni logos */
