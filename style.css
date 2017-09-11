@@ -571,9 +571,10 @@ a.anchor {
 	background-color: #FFF;
 }
 
+/* style embedded video */
 .video-grid-project-page iframe {
   width: 100%;
-  height: 56.25%;
+  height: 200px;
 }
 .video-grid-project-page .col {
   margin: 0px 0px 0px 0px;
@@ -584,6 +585,20 @@ a.anchor {
   margin-right: 90px;
   padding: 12px 0 0 0;
 }
+
+/* style embedded slideshows */
+.project-page-embed-slideshow {
+  margin-right: 90px;
+  padding: 12px 0 0 0;
+}
+.project-page-embed-slideshow .col {
+  margin: 0;
+  padding: 0 25px 40px 20px;
+}
+.project-page-embed-slideshow iframe {
+  height: 200px;
+}
+
 
 
 /***************** 4 PUBLICATIONS PAGE ***************/
