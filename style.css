@@ -897,6 +897,13 @@ a.anchor {
 	padding: 0px;
 	font-size: 1em;
 }
+.panel-advisors-and-partners .carousel-caption p {
+	text-shadow: 0 0px 0px rgba(0,0,0,0);
+	font-weight: 200;
+	font-size: 0.8em;
+	text-align: left;
+}
+
 /* position their captions at the bottom */
 .panel-advisors-and-partners .carousel-caption {
 	right: 0;
