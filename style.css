@@ -488,9 +488,6 @@ a.anchor {
 /*    3.2. INDIVIDUAL PROJECT PAGES   */
 /****** the mini panel for a project  ******/
 /* left column top */
-.project-page .panel-col-first .field-content {
-	width: 100%;
-}
 .project-page .panel-col-first .inside {
 	margin-top: 40px;
 	margin-left: 100px;
@@ -553,6 +550,10 @@ a.anchor {
 	padding: 0;
 	margin: 0;
 }
+.project-page tbody tr td {
+	border-top: 2px solid #FFF;
+	padding: 12px 0 0 0;
+}
 /* border under the project, investigator and publications titles */
 .project-page .pane-title,
 .project-page thead tr th {
@@ -562,10 +563,7 @@ a.anchor {
 .project-page .panel-col-first tbody tr td {
 	border: none;
 }
-.project-page tbody tr td {
-	border-top: 2px solid #FFF;
-	padding: 12px 0 0 0;
-}
+
 /* style table - remove grey background color for odd rows */
 .project-page tbody tr:nth-of-type(odd) {
 	background-color: #FFF;
@@ -582,6 +580,7 @@ a.anchor {
 }
 .video-grid-project-page {
   margin-right: 90px;
+  padding: 12px 0 0 0;
 }
 
 
