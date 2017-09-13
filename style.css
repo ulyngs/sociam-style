@@ -9,6 +9,13 @@
 ****************************** */
 
 /* **********1 GLOBAL FONT AND MARGIN STYLING******** */
+/* add min-width as silly way of handling mobile devices, for now */
+body,
+html {
+  min-width: 1024px;
+}
+
+
 /* make all h2 skinnier */
 h2 {
 	font-weight:200;
@@ -251,7 +258,6 @@ and columns for theme-showcase on front page */
 .theme-showcase .row .col:nth-child(4) .carousel-caption {
 	right: 0px;
 	left: 0px;
-
 	top: 0px;
 	/* max changed this to try thicker ones >> 
 	       	    height: 30px; 
@@ -267,18 +273,26 @@ and columns for theme-showcase on front page */
 	color: #FFF;;
 	margin-left: 0%;
 	margin-right: 0%;
-	padding: 0px;
+	padding: 0px 0px 0px 0px;
 	font-size: 13pt;
 	position: relative;
 	font-weight: 400;
 	text-align: left;
-	margin: 0px;
+	margin: 0px 0px 0px 20px;
 }
 .theme-showcase .row .col:nth-child(2) .carousel-caption h3 a,
 .theme-showcase .row .col:nth-child(3) .carousel-caption h3 a,
 .theme-showcase .row .col:nth-child(4) .carousel-caption h3 a {
     text-decoration:none;
 }
+
+/* make the images full width of the parent container
+so it doesn't look rubbish when resizing */
+.theme-showcase .row .col:nth-child(2) img,
+.theme-showcase .row .col:nth-child(3) img,
+.theme-showcase .row .col:nth-child(4) img {
+  width: 100%;
+} 
 
 /* apply background color to captions */
 /* CURRENT OPTION - TWEAKED GOOGLE COLOR SCHEME */
@@ -942,6 +956,12 @@ a.anchor {
 	padding: 35px;
 }
 
+/* make the grid images full width so it looks less rubbish
+when resizing */
+.advisory-board img {
+  width: 100%;
+}
+
 /*background colours of bio panels*/
 
 #mini-panel-mini_panel_test_ {
@@ -1083,3 +1103,20 @@ a.anchor {
   font-size: 1.2em;
   font-weight: 250;
 }
+
+
+/***** solution for front page grid ******/
+/* color the research themes image */
+.grid-improve .panels-flexible-region-7-left {
+  background-color: #FF7800;
+}
+/* don't have scrollbars */
+.grid-improve .panels-flexible-region {
+  overflow: visible !important;
+}
+/* set the first column to be exactly 25% */
+.grid-improve .panels-flexible-region-7-left {
+  width: 25%;
+}
+
+
