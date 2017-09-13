@@ -10,9 +10,10 @@
 
 /* **********1 GLOBAL FONT AND MARGIN STYLING******** */
 /* add min-width as silly way of handling mobile devices, for now */
-body,
-html {
-  min-width: 1024px;
+html,
+body {
+    min-width: 1024px;
+ /*  min-width:1400px;  */
 }
 
 
@@ -764,11 +765,11 @@ a.anchor {
 	margin-bottom: 60px;
 }
 /* set nigel's div to relative position */
-.nigel-block .nigel-photo-pane .col-lg-12 {
+.nigel-block .nigel-photo-pane .col {
 	position: relative;
 }
 /* position nigel */
-.nigel-block .nigel-photo-pane .col-lg-12 img {
+.nigel-block .nigel-photo-pane .col img {
 	position: absolute;
 	top: 10px;
 	left: 33%;
@@ -776,7 +777,7 @@ a.anchor {
 } 
 
 /* position nigel's caption */
-.nigel-block .nigel-photo-pane .col-lg-12 div.carousel-caption {
+.nigel-block .nigel-photo-pane .col div.carousel-caption {
 	position: absolute;
 	top: 170px;
 	left: 33%;
@@ -831,7 +832,7 @@ a.anchor {
 
 /*****TEAM IMAGES*******/
 /*Remove margins on team images*/
-.team-image-panel .col-lg-3 {
+.team-image-panel .col {
 	padding-left: 0px;
 	padding-right: 0px;
 }
@@ -894,7 +895,7 @@ a.anchor {
 	color: rgba(0,0,0,0);
 }
 /* make it visible on hover */
-.team-image-panel .col-lg-3:hover .carousel-caption {
+.team-image-panel .col:hover .carousel-caption {
 	visibility: visible;
 	color: #FFF;
 	background-color: rgba(0,0,0,0.5);
