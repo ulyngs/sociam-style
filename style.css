@@ -10,10 +10,10 @@
 
 /* **********1 GLOBAL FONT AND MARGIN STYLING******** */
 /* add min-width as silly way of handling mobile devices, for now */
+
 html,
 body {
     min-width: 1024px;
- /*  min-width:1400px;  */
 }
 
 
@@ -552,11 +552,13 @@ a.anchor {
 	padding: 0px;
 }
 /* style text */
-.project-page .panel-col-last h3 {
+.project-page .panel-col-last h3,
+.project-page .panel-col-last .views-field-body p {
 	font-size: 1.3em;
 	font-weight: 200;
 	line-height: 140%;
 }
+
 .project-page thead th {
 	font-size: 30px;
 	font-weight: 200;
@@ -573,6 +575,7 @@ a.anchor {
 }
 /* border under the project, investigator and publications titles */
 .project-page .pane-title,
+.project-page .panel-col-last .views-field-title,
 .project-page thead tr th {
 	border-bottom: 1px solid #ddd;
 }
@@ -1057,7 +1060,17 @@ when resizing */
 	font-weight: 200;
 	line-height: 140%;
 }
-.project-page thead th {
+/* style project description heading */
+.project-page .panel-col-last .views-field-title {
+	font-size: 30px;
+	font-weight: 200;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans serif;
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 0px 0px;
+	line-height: 120%;
+}
+
+.project-page thead th {{
 	font-size: 30px;
 	font-weight: 200;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans serif;
