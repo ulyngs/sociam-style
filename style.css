@@ -1,3 +1,5 @@
+s
+
 /* Admin Backend */
 
 /***** STYLING DOC INDEX ***** 
@@ -15,7 +17,6 @@ html,
 body {
     min-width: 1024px;
 }
-
 
 /* make all h2 skinnier */
 h2 {
@@ -38,47 +39,10 @@ h3 {
 	border-color: rgba(0,0,0,0.2);
 }
 
-/* add styling for big dramatic quote on about page */
-blockquote {
-    /*font-family: Georgia, serif;*/
-	font-size: 17px;
-	font-style: italic;
-	width: 95%;;
-	margin: 0.25em 0;
-	padding: 0.35em 40px;
-	line-height: 1.45;
- 	position: relative;
-	color: #383838;
-	border-left: 0px solid #fff
-	padding-right: 0px;
-}
-
-blockquote:before {
-    display: block;
-    padding-left: 10px;
-    content: "\201C";
-    font-size: 80px;
-    position: absolute;
-    left: -20px;
-    top: -20px;
-    color: #7a7a7a;
-}
-
-blockquote cite {
-    color: #999999;
-    font-size: 14px;
-    display: block;
-    margin-top: 5px;
-}
-
-blockquote cite:before {
-    content: "\2014 \2009";
-}
-
 /* keep the site full width */
 .col-sm-12 {
-  	 padding-left: 0px;
-   	 padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 /* **********2 FRONT PAGE *************** */
@@ -112,20 +76,8 @@ blockquote cite:before {
 
 /* front page carousel text */
 .front-page-carousel .carousel-caption {
-    background-color: rgba(0,0,0,0.5); /* create dark overlay */
-    text-align:left;
-
-       /* font-size: 5em; */
-	/*	right: 75.6%; */
-	/*	left: 0px;*/
-    /* top: 0px; */
-	
-	/* padding:16px; */
-	/* height: 800px; */ /* make the background darkness full-height */ 
-	/* max changes : */
-
-	/*top:140px;*/
-	/* top:9.5vw; */ /* 45%; */
+  background-color: rgba(0,0,0,0.5); /* create dark overlay */
+  text-align:left;
 	padding:0.5vw 0px 0px 25px;
 	font-weight:bold;
 	top:auto;
@@ -135,15 +87,13 @@ blockquote cite:before {
 	height:40%;
 }
 .front-page-carousel .carousel-caption h3 {
-   /* font-size:32pt; */
-    font-size:2.8vw;
-    margin:0.8vw 0px 0px 0px;
+  font-size:2.8vw;
+  margin:0.8vw 0px 0px 0px;
 }
 .front-page-carousel .carousel-caption p {
     padding:0px;
     margin:0px;
-    font-weight:200;
-    /*  font-size:21pt; */  
+    font-weight:200; 
     font-size:1.4vw;
 }
 .front-page-carousel .carousel-caption a {
@@ -200,6 +150,7 @@ This is a slightly darker orange to avid clash w/ yellow
 privacy-theme  */
 .theme-grid.front-page .row:nth-child(1) .col:nth-child(1) {
   background-color: #FF7800;
+  margin-left: 10px;
 }
 .theme-grid.front-page .row:nth-child(2) .col:nth-child(1) {
   background-color: #FF7800;  
@@ -265,7 +216,7 @@ and columns for theme-showcase on front page */
 		    padding: 5px 20px 4px 5px;
         */
 	height:49px;
-	padding: 16px 0px 0px 0px;
+	padding: px 0px 0px 0px;
 	overflow: hidden;
 }
 .theme-showcase .row .col:nth-child(2) .carousel-caption h3,
@@ -279,7 +230,7 @@ and columns for theme-showcase on front page */
 	position: relative;
 	font-weight: 400;
 	text-align: left;
-	margin: 0px 0px 0px 20px;
+	margin: 0px 0px 0px 0px;
 }
 .theme-showcase .row .col:nth-child(2) .carousel-caption h3 a,
 .theme-showcase .row .col:nth-child(3) .carousel-caption h3 a,
@@ -354,8 +305,11 @@ so it doesn't look rubbish when resizing */
 	transition: filter 0.05s;
 }
 
+.front-showcase .row .col:nth-child(1) .carousel-caption {
+  margin-left: 10px;
+}
 
-/* ******** END OF FRONT PAGE STYLING **** */
+/********* END OF FRONT PAGE STYLING **** */
 
 /* ********** 3 RESEARCH PAGE ********* */
 
@@ -778,6 +732,39 @@ a.anchor {
 	font-size: 1.3em;
 	font-weight: 200;
 }
+
+/* style big dramatic quote on about page */
+blockquote {
+	font-size: 1.2em;
+	font-style: italic;
+	width: 95%;;
+	margin: 0.25em 0;
+	padding: 0.35em 40px;
+	line-height: 1.45;
+ 	position: relative;
+	color: #383838;
+	border-left: 0px solid #fff
+	padding-right: 0px;
+}
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #7a7a7a;
+}
+blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+blockquote cite:before {
+    content: "\2014 \2009";
+}
 .about-social-machines-text blockquote h3 {
 	font-size: 1.2em
 }
@@ -1082,7 +1069,7 @@ when resizing */
 	line-height: 120%;
 }
 
-.project-page thead th {{
+.project-page thead th {
 	font-size: 30px;
 	font-weight: 200;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans serif;
