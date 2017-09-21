@@ -519,16 +519,19 @@ a.anchor {
 	margin-left: 0px;
 	margin-bottom: 40px;
 }
-.project-page .pane-project-investigators .view-content {
+.project-page .pane-project-investigators .view-content,
+.project-investigators-contextual {
 	margin: 20px 0px 0px 15px;
 	padding: 0px;
 }
-.project-page .pane-project-investigators .col {
+.project-page .pane-project-investigators .col,
+.project-investigators-contextual .col {
 	margin: 0px ;
 	padding: 0px;
 }
 /* text on the investigator images */
-.project-page .pane-project-investigators .carousel-caption  {
+.project-page .pane-project-investigators .carousel-caption,
+.project-investigators-contextual .carousel-caption  {
     background-color: rgba(0,0,0,0.6); /* create dark overlay */
     bottom:0px; left: 0px; right:0px;
     height:32%;
@@ -544,7 +547,18 @@ a.anchor {
     font-weight:300;
 /*	top: 55px; */
 }
-.project-page .pane-project-investigators .carousel-caption a {
+
+.project-page .project-investigators-contextual h3 {
+    padding:0px; margin:0px;
+    font-size: 11pt;
+    line-height:0.9;
+    position: relative;
+    font-weight:300;
+}
+
+
+.project-page .pane-project-investigators .carousel-caption a,
+.project-investigators-contextual .carousel-caption a {
 	color: #FFF;
 }
 .project-page .project-publications {
@@ -552,7 +566,6 @@ a.anchor {
 	padding: 0px;
 }
 /* style text */
-.project-page .panel-col-last h3,
 .project-page .panel-col-last .views-field-body p {
 	font-size: 1.3em;
 	font-weight: 200;
@@ -590,30 +603,36 @@ a.anchor {
 }
 
 /* style embedded video */
-.video-grid-project-page iframe {
+.video-grid-project-page iframe,
+.project-videos-contextual iframe {
   width: 100%;
   height: 200px;
 }
-.video-grid-project-page .col {
+.video-grid-project-page .col,
+.project-videos-contextual .col {
   margin: 0px 0px 0px 0px;
   padding: 0 25px 40px 20px;
   
 }
-.video-grid-project-page {
+.video-grid-project-page,
+.project-videos-contextual {
   margin-right: 90px;
   padding: 12px 0 0 0;
 }
 
 /* style embedded slideshows */
-.project-page-embed-slideshow {
+.project-page-embed-slideshow,
+.project-slideshows-contextual {
   margin-right: 90px;
   padding: 12px 0 0 0;
 }
-.project-page-embed-slideshow .col {
+.project-page-embed-slideshow .col,
+.project-slideshows-contextual .col {
   margin: 0;
   padding: 0 25px 40px 20px;
 }
-.project-page-embed-slideshow iframe {
+.project-page-embed-slideshow iframe,
+.project-slideshows-contextual iframe {
   height: 200px;
 }
 
@@ -1053,13 +1072,6 @@ when resizing */
   background-color: #FFF;
 }
 
-
-/* style text */
-.project-page .panel-col-last h3 {
-	font-size: 1.3em;
-	font-weight: 200;
-	line-height: 140%;
-}
 /* style project description heading */
 .project-page .panel-col-last .views-field-title {
 	font-size: 30px;
