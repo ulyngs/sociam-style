@@ -520,10 +520,11 @@ a.anchor {
 	padding: 0px;
 }
 /* style text */
-.project-page .panel-col-last .views-field-body p {
+.project-page .panel-col-last .views-field-body p,
+.project-page .panel-col-last .views-field-body li  {
 	font-size: 1.3em;
 	font-weight: 200;
-	line-height: 140%;
+	line-height: 150%;
 }
 
 .project-page thead th {
@@ -839,6 +840,7 @@ blockquote cite:before {
   color: black;
 }
 
+
 /*****TEAM IMAGES*******/
 /*Remove margins on team images*/
 .team-image-panel .col {
@@ -868,6 +870,21 @@ blockquote cite:before {
 	padding: 0;
 }
 
+.team-image-panel .views-field-title {
+	font-weight: 200;
+	font-size: 0.95em;
+	padding: 2px 5px 5px 0px;
+}
+.bigdog-headshots .views-field-title {
+	font-weight: 200;
+	font-size: 1em;
+	padding-top: 2px;
+}
+.bigdog-headshots .views-field-field-role {
+	font-weight: 200;
+	font-size: 0.9em;
+}
+
 /* style the caption text */
 .team-image-panel .carousel-caption h3 {
 	margin: 0px;
@@ -881,18 +898,20 @@ blockquote cite:before {
 }
 /* hide the names, make them visible on hover */
 .team-image-panel .carousel-caption h3 {
-	visibility: hidden;
-}
-.team-image-panel .col:hover h3 {
 	visibility: visible;
 	color: #FFF;
 }
+/*
+.team-image-panel .col:hover h3 {
+	visibility: visible;
+	color: #FFF;
+}*/
 /* make linked names appear white instead of blue */
 .team-image-panel a {
 	color: #FFF;
 }
 
-/* the whole carousel caption */
+/* the whole carousel caption - DEPRECATED AS CHANGED TO SHOWING FIELDS BELOW IMAGES*/
 .team-image-panel .carousel-caption {
 	visibility: hidden;
 	text-align: left;
@@ -903,8 +922,7 @@ blockquote cite:before {
 	padding-top: 0px;
 	color: rgba(0,0,0,0);
 }
-/* make it visible on hover */
-.team-image-panel .col:hover .carousel-caption {
+.team-image-panel .col .carousel-caption {
 	visibility: visible;
 	color: #FFF;
 	background-color: rgba(0,0,0,0.5);
@@ -1027,8 +1045,12 @@ when resizing */
   margin-bottom: 5px;
 }
 .team-member-info .views-field-field-role {
+  margin-bottom: 5px;
+}
+.team-member-info .views-field-field-personal-website {
   margin-bottom: 40px;
 }
+
 .team-member-info .views-field-field-role span,
 .team-member-info .views-field-field-role div {
   display: inline;
