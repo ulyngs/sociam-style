@@ -805,6 +805,12 @@ blockquote cite:before {
 	margin: 0px 50px 0px 0px;
 	padding: 0px;
 }
+
+/*hide spacer */
+#spacer-about {
+	display: none;
+}
+
 /* style the title for nigel's bio */
 .nigel-block .nigel-bio-pane .pane-title {
 	font-size: 1.7em;
